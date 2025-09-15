@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Islamic Estate Planning Guide - Comprehensive Reference</title>
+    <!-- Local font files with Google Fonts fallback -->
+    <link rel="stylesheet" href="fonts/local-fonts.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -12,7 +17,7 @@
         }
 
         body {
-            font-family: 'Georgia', 'Times New Roman', serif;
+            font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
             line-height: 1.6;
             color: #333;
             background: #f9f7f5;
@@ -32,33 +37,43 @@
         .header {
             background: #7a0f12;
             color: white;
+            padding: 1.5rem 2rem;
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+        }
+
+        .header-logo {
+            flex-shrink: 0;
+        }
+
+        .header-logo img {
+            height: 60px;
+            width: auto;
+        }
+
+        .header-content {
+            flex: 1;
             text-align: center;
-            padding: 2rem;
         }
 
         .header h1 {
-            font-family: 'Georgia', 'Times New Roman', serif;
-            font-size: 2.5rem;
+            font-family: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+            font-size: 1.8rem;
             margin-bottom: 0.5rem;
             font-weight: bold;
         }
 
         .header .subtitle {
-            font-size: 1.2rem;
+            font-size: 1rem;
             opacity: 0.9;
-            margin-bottom: 1rem;
+            margin-bottom: 0;
             font-weight: normal;
-        }
-
-        .header .attribution {
-            font-size: 0.9rem;
-            opacity: 0.8;
-            font-style: italic;
         }
 
         .nav-container {
             background: #f9f7f5;
-            border-bottom: 3px solid #7a0f12;
+            border-bottom: 2px solid #7a0f12;
             position: sticky;
             top: 0;
             z-index: 100;
@@ -66,7 +81,7 @@
 
         .nav-tabs {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
             gap: 1px;
             background: #7a0f12;
             padding: 1px;
@@ -76,13 +91,13 @@
             background: white;
             border: none;
             color: #7a0f12;
-            padding: 1rem 0.5rem;
+            padding: 0.6rem 0.4rem;
             cursor: pointer;
             transition: all 0.3s ease;
-            font-size: 0.9rem;
+            font-size: 0.85rem;
             font-weight: bold;
             text-align: center;
-            font-family: 'Georgia', 'Times New Roman', serif;
+            font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
         }
 
         .nav-tab:hover {
@@ -96,7 +111,7 @@
         }
 
         .progress-bar {
-            height: 4px;
+            height: 3px;
             background: #f9f7f5;
             position: relative;
         }
@@ -112,7 +127,7 @@
             padding: 2rem;
             max-height: 75vh;
             overflow-y: auto;
-            font-family: 'Arial', sans-serif;
+            font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
         }
 
         .tab-content {
@@ -141,7 +156,7 @@
             cursor: pointer;
             font-weight: bold;
             transition: all 0.3s ease;
-            font-family: 'Georgia', 'Times New Roman', serif;
+            font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
         }
 
         .nav-button:hover {
@@ -156,11 +171,11 @@
         .tab-counter {
             font-weight: bold;
             color: #7a0f12;
-            font-family: 'Georgia', 'Times New Roman', serif;
+            font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
         }
 
         h1, h2, h3, h4, h5, h6 {
-            font-family: 'Georgia', 'Times New Roman', serif;
+            font-family: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
         }
 
         h2 {
@@ -274,14 +289,14 @@
             padding: 12px;
             text-align: left;
             border: 1px solid #7a0f12;
-            font-family: 'Arial', sans-serif;
+            font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
         }
 
         th {
             background: #7a0f12;
             color: white;
             font-weight: bold;
-            font-family: 'Georgia', 'Times New Roman', serif;
+            font-family: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
         }
 
         tr:nth-child(even) {
@@ -302,7 +317,7 @@
         }
 
         .arabic-text {
-            font-family: 'Times New Roman', serif;
+            font-family: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
             font-size: 1.3rem;
             line-height: 2;
             text-align: right;
@@ -339,7 +354,7 @@
         }
 
         .worksheet h4 {
-            font-family: 'Georgia', 'Times New Roman', serif;
+            font-family: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
             color: #7a0f12;
             border-bottom: 2px solid #7a0f12;
             padding-bottom: 0.5rem;
@@ -364,11 +379,13 @@
             border: 1px solid #333;
             padding: 8px;
             text-align: left;
+            color: #333;
         }
 
         .worksheet-table th {
             background: #f9f7f5;
             font-weight: bold;
+            color: #333;
         }
 
         .worksheet-section {
@@ -387,7 +404,7 @@
         .checklist h4 {
             color: #547a2e;
             margin-bottom: 1rem;
-            font-family: 'Georgia', 'Times New Roman', serif;
+            font-family: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
         }
 
         .checklist label {
@@ -415,24 +432,121 @@
         }
 
         .faq-section {
-            margin: 2rem 0;
+            margin: 1.5rem 0;
         }
 
-        .faq-section h4 {
-            background: #f9f7f5;
-            padding: 1rem;
-            margin: 1rem 0 0 0;
+        .faq-item {
             border: 2px solid #7a0f12;
-            cursor: pointer;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            overflow: hidden;
+            transition: all 0.3s ease;
         }
 
+        .faq-question {
+            background: #f9f7f5;
+            padding: 1rem 1.5rem;
+            margin: 0;
+            cursor: pointer;
+            position: relative;
+            font-weight: bold;
+            color: #7a0f12;
+            border-bottom: 1px solid #7a0f12;
+            transition: background-color 0.3s ease;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .faq-question:hover {
+            background: #e8e6e1;
+        }
+
+        .faq-question::after {
+            content: '+';
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #7a0f12;
+            transition: transform 0.3s ease;
+        }
+
+        .faq-question.active::after {
+            content: '−';
+            transform: rotate(0deg);
+        }
+
+        .faq-answer {
+            display: none;
+            padding: 1.5rem;
+            background: white;
+            border-top: none;
+        }
+
+        .faq-answer.active {
+            display: block;
+            animation: fadeIn 0.3s ease;
+        }
+
+        .faq-answer .highlight-box,
+        .faq-answer .warning-box,
+        .faq-answer .info-box,
+        .faq-answer .verse-translation,
+        .faq-answer .steps-list {
+            margin: 1rem 0;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Desktop and large tablet optimizations */
+        @media (min-width: 769px) {
+            .nav-tabs {
+                grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            }
+
+            .nav-tab {
+                padding: 0.5rem 0.3rem;
+                font-size: 0.8rem;
+            }
+        }
+
+        /* Tablet optimizations */
+        @media (min-width: 481px) and (max-width: 1024px) {
+            .nav-tabs {
+                grid-template-columns: repeat(auto-fit, minmax(95px, 1fr));
+            }
+
+            .nav-tab {
+                padding: 0.55rem 0.35rem;
+                font-size: 0.8rem;
+            }
+        }
+
+        /* Mobile optimizations */
         @media (max-width: 768px) {
             .container {
                 margin: 0.5rem;
             }
 
+            .header {
+                flex-direction: column;
+                text-align: center;
+                padding: 1rem;
+                gap: 1rem;
+            }
+
+            .header-logo img {
+                height: 50px;
+            }
+
             .header h1 {
-                font-size: 2rem;
+                font-size: 1.5rem;
+            }
+
+            .header .subtitle {
+                font-size: 0.9rem;
             }
 
             .nav-tabs {
@@ -441,8 +555,9 @@
             }
 
             .nav-tab {
-                padding: 0.7rem 0.3rem;
-                font-size: 0.7rem;
+                padding: 0.5rem 0.25rem;
+                font-size: 0.65rem;
+                line-height: 1.2;
             }
 
             .content {
@@ -465,7 +580,157 @@
             }
         }
 
+        /* Very small mobile devices */
+        @media (max-width: 480px) {
+            .nav-tab {
+                padding: 0.4rem 0.2rem;
+                font-size: 0.6rem;
+            }
+        }
+
         /* Print styles */
+        /* Attorney Grid Styles */
+        .attorney-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin: 1.5rem 0;
+        }
+
+        .attorney-card {
+            background: white;
+            border: 2px solid #7a0f12;
+            border-radius: 12px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .attorney-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+        }
+
+        .attorney-card-primary {
+            border-left: 6px solid #547a2e;
+        }
+
+        .attorney-card-secondary {
+            border-left: 6px solid #7a0f12;
+        }
+
+        .attorney-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 0.75rem;
+            flex-wrap: wrap;
+        }
+
+        .attorney-header h5 {
+            margin: 0;
+            color: #7a0f12;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        .attorney-badge {
+            background: #f9f7f5;
+            color: #547a2e;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: bold;
+            border: 1px solid #547a2e;
+        }
+
+        .attorney-firm {
+            font-size: 1rem;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid #e8e6e1;
+        }
+
+        .attorney-contact {
+            margin-bottom: 1rem;
+        }
+
+        .contact-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 0.5rem;
+            padding: 0.25rem 0;
+        }
+
+        .contact-label {
+            font-weight: bold;
+            color: #7a0f12;
+            min-width: 60px;
+        }
+
+        .contact-value {
+            text-align: right;
+            color: #333;
+        }
+
+        .contact-value a {
+            color: #547a2e;
+            text-decoration: none;
+        }
+
+        .contact-value a:hover {
+            text-decoration: underline;
+        }
+
+        .attorney-address {
+            background: #f9f7f5;
+            padding: 0.75rem;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            line-height: 1.4;
+            color: #555;
+            margin-bottom: 1rem;
+        }
+
+        .attorney-note {
+            background: #e8f4e8;
+            border: 1px solid #547a2e;
+            border-radius: 6px;
+            padding: 0.75rem;
+            font-size: 0.9rem;
+            color: #333;
+        }
+
+        .attorney-note strong {
+            color: #547a2e;
+        }
+
+        @media (max-width: 768px) {
+            .attorney-grid {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+
+            .attorney-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0.5rem;
+            }
+
+            .contact-item {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0.25rem;
+            }
+
+            .contact-value {
+                text-align: left;
+            }
+        }
+
         @media print {
             .nav-container, .tab-navigation {
                 display: none;
@@ -480,9 +745,16 @@
 <body>
     <div class="container">
         <div class="header">
-            <h1>🕌 Islamic Will and Estate Planning Guide</h1>
-            <div class="subtitle">A Reference for Muslims in Tennessee</div>
-            <div class="attribution">Muslim Community of Knoxville | Your complete guide to creating an Islamic Will that complies with Tennessee law</div>
+            <div class="header-logo">
+                <a href="https://muslimknoxville.org" target="_blank">
+                    <img src="MCK-logo.png" alt="Muslim Community of Knoxville">
+                </a>
+            </div>
+            <div class="header-content">
+                <h1>Islamic Will and Estate Planning Guide</h1>
+                <div class="subtitle">A Reference for Muslims in Tennessee</div>
+                <div class="subtitle" style="font-size: 0.8rem; margin-top: 0.5rem;">Last updated September 15, 2025. Questions, email admin@muslimknoxville.org</div>
+            </div>
         </div>
 
         <div class="nav-container">
@@ -508,9 +780,9 @@
             <!-- Why You Need an Islamic Will Tab -->
             <div id="overview" class="tab-content active">
                 <div class="tab-navigation">
-                    <button class="nav-button" onclick="previousTab()" id="prevBtn" disabled>← Previous</button>
+                    <button class="nav-button" onclick="previousTab()" id="prevBtn" disabled>Previous</button>
                     <span class="tab-counter">Section 1 of 11: Why You Need an Islamic Will</span>
-                    <button class="nav-button" onclick="nextTab()" id="nextBtn">Next: Foundations →</button>
+                    <button class="nav-button" onclick="nextTab()" id="nextBtn">Next: Foundations</button>
                 </div>
 
                 <h2>Why You Need an Islamic Will</h2>
@@ -537,6 +809,11 @@
                     </ul>
                 </div>
 
+                <div class="warning-box">
+                    <h3>⚠️ Important Disclaimer</h3>
+                    <p><strong>This information is provided for educational purposes only and does not constitute legal advice.</strong> Estate planning involves complex legal and financial considerations that vary by individual circumstances. Always consult with qualified legal and financial professionals before making decisions about your estate plan.</p>
+                </div>
+
                 <h3>Quick Start Guide</h3>
                 <div class="info-box">
                     <p>This comprehensive reference contains everything you need to create your Islamic Will and complete your estate planning. It consolidates all information from our workshop into one actionable guide you can reference throughout the process.</p>
@@ -547,9 +824,9 @@
             <!-- Islamic Foundations Tab -->
             <div id="foundations" class="tab-content">
                 <div class="tab-navigation">
-                    <button class="nav-button" onclick="previousTab()" id="prevBtn">← Previous: Overview</button>
+                    <button class="nav-button" onclick="previousTab()" id="prevBtn">Previous: Overview</button>
                     <span class="tab-counter">Section 2 of 11: Islamic Foundations of Inheritance</span>
-                    <button class="nav-button" onclick="nextTab()" id="nextBtn">Next: Rules →</button>
+                    <button class="nav-button" onclick="nextTab()" id="nextBtn">Next: Rules</button>
                 </div>
 
                 <h2>Islamic Foundations of Inheritance</h2>
@@ -620,9 +897,9 @@
             <!-- Understanding Islamic Inheritance Rules Tab -->
             <div id="inheritance" class="tab-content">
                 <div class="tab-navigation">
-                    <button class="nav-button" onclick="previousTab()">← Previous: Foundations</button>
+                    <button class="nav-button" onclick="previousTab()">Previous: Foundations</button>
                     <span class="tab-counter">Section 3 of 11: Understanding Islamic Inheritance Rules</span>
-                    <button class="nav-button" onclick="nextTab()">Next: Distribution →</button>
+                    <button class="nav-button" onclick="nextTab()">Next: Distribution</button>
                 </div>
 
                 <h2>Understanding Islamic Inheritance Rules</h2>
@@ -717,9 +994,9 @@
             <!-- Islamic Steps of Estate/Wealth Distribution Tab -->
             <div id="distribution" class="tab-content">
                 <div class="tab-navigation">
-                    <button class="nav-button" onclick="previousTab()">← Previous: Rules</button>
+                    <button class="nav-button" onclick="previousTab()">Previous: Rules</button>
                     <span class="tab-counter">Section 4 of 11: Islamic Steps of Estate/Wealth Distribution</span>
-                    <button class="nav-button" onclick="nextTab()">Next: TN Law →</button>
+                    <button class="nav-button" onclick="nextTab()">Next: TN Law</button>
                 </div>
 
                 <h2>Islamic Steps of Estate/Wealth Distribution</h2>
@@ -770,9 +1047,9 @@
             <!-- Tennessee Legal Requirements Tab -->
             <div id="tennessee" class="tab-content">
                 <div class="tab-navigation">
-                    <button class="nav-button" onclick="previousTab()">← Previous: Distribution</button>
+                    <button class="nav-button" onclick="previousTab()">Previous: Distribution</button>
                     <span class="tab-counter">Section 5 of 11: Tennessee Legal Requirements</span>
-                    <button class="nav-button" onclick="nextTab()">Next: Documents →</button>
+                    <button class="nav-button" onclick="nextTab()">Next: Documents</button>
                 </div>
 
                 <h2>Tennessee Legal Requirements</h2>
@@ -838,9 +1115,9 @@
             <!-- Your Three Essential Documents Tab -->
             <div id="documents" class="tab-content">
                 <div class="tab-navigation">
-                    <button class="nav-button" onclick="previousTab()">← Previous: TN Law</button>
+                    <button class="nav-button" onclick="previousTab()">Previous: TN Law</button>
                     <span class="tab-counter">Section 6 of 11: Your Three Essential Documents</span>
-                    <button class="nav-button" onclick="nextTab()">Next: Steps →</button>
+                    <button class="nav-button" onclick="nextTab()">Next: Steps</button>
                 </div>
 
                 <h2>Your Three Essential Documents</h2>
@@ -892,7 +1169,7 @@
                         <li>Organ donation wishes</li>
                     </ul>
 
-                    <p><strong>Available from:</strong> Tennessee state website or MCK can provide forms</p>
+                    <p><strong>Available from:</strong> <a href="https://www.tn.gov/content/dam/tn/health/documents/Advance_Directive_for_Health_Care.pdf" target="_blank">Tennessee state website</a> or MCK can provide forms</p>
                 </div>
 
                 <h3>Consequences of Missing Documents</h3>
@@ -920,9 +1197,9 @@
             <!-- Creating Your Islamic Will - Step by Step Tab -->
             <div id="stepbystep" class="tab-content">
                 <div class="tab-navigation">
-                    <button class="nav-button" onclick="previousTab()">← Previous: Documents</button>
+                    <button class="nav-button" onclick="previousTab()">Previous: Documents</button>
                     <span class="tab-counter">Section 7 of 11: Creating Your Islamic Will - Step by Step</span>
-                    <button class="nav-button" onclick="nextTab()">Next: Situations →</button>
+                    <button class="nav-button" onclick="nextTab()">Next: Situations</button>
                 </div>
 
                 <h2>Creating Your Islamic Will - Step by Step</h2>
@@ -1021,23 +1298,72 @@
 
                     <h4>Option A: Use Online Islamic Will Services</h4>
                     <ul>
-                        <li><strong>Shariawiz.com</strong> (approximately $200) - recommended by presenter</li>
-                        <li><strong>Mywassiyah.com</strong></li>
-                        <li><strong>Muslim.estate</strong></li>
+                        <li><strong><a href="https://shariawiz.com" target="_blank">Shariawiz.com</a></strong> (approximately $200) - recommended by presenter</li>
+                        <li><strong><a href="https://mywassiyah.com" target="_blank">Mywassiyah.com</a></strong></li>
+                        <li><strong><a href="https://muslim.estate" target="_blank">Muslim.estate</a></strong></li>
                     </ul>
                     <p><em>Then take draft to Tennessee attorney for review and proper execution</em></p>
 
                     <h4>Option B: Work Directly with Attorney</h4>
                     <ul>
-                        <li><strong>Jonathan Reed, Egerton McAfee</strong> - experienced with Islamic wills</li>
-                        <li><strong>John R. Foust</strong> - solo practitioner familiar with Muslim community</li>
+                        <div class="attorney-grid">
+                            <div class="attorney-card attorney-card-primary">
+                                <div class="attorney-header">
+                                    <h5>Jonathan Reed</h5>
+                                    <span class="attorney-badge">Estate Planning Specialist</span>
+                                </div>
+                                <div class="attorney-firm">Egerton McAfee Law Firm</div>
+                                <div class="attorney-contact">
+                                    <div class="contact-item">
+                                        <span class="contact-label">Phone:</span>
+                                        <span class="contact-value">(865) 546-0500</span>
+                                    </div>
+                                    <div class="contact-item">
+                                        <span class="contact-label">Email:</span>
+                                        <span class="contact-value">information@emlaw.com</span>
+                                    </div>
+                                    <div class="contact-item">
+                                        <span class="contact-label">Website:</span>
+                                        <span class="contact-value"><a href="https://emlaw.com" target="_blank">emlaw.com</a></span>
+                                    </div>
+                                </div>
+                                <div class="attorney-address">
+                                    900 S Gay St, 14th Floor<br>
+                                    Knoxville, TN 37902
+                                </div>
+                                <div class="attorney-note">
+                                    <strong>Tip:</strong> Ask for Katrina (his assistant) - very helpful
+                                </div>
+                            </div>
+
+                            <div class="attorney-card attorney-card-secondary">
+                                <div class="attorney-header">
+                                    <h5>John R. Foust</h5>
+                                    <span class="attorney-badge">Solo Practitioner</span>
+                                </div>
+                                <div class="attorney-firm">Foust Law</div>
+                                <div class="attorney-contact">
+                                    <div class="contact-item">
+                                        <span class="contact-label">Phone:</span>
+                                        <span class="contact-value">(865) 203-4041</span>
+                                    </div>
+                                    <div class="contact-item">
+                                        <span class="contact-label">Email:</span>
+                                        <span class="contact-value">rfoust@foustlaw.com</span>
+                                    </div>
+                                    <div class="contact-item">
+                                        <span class="contact-label">Website:</span>
+                                        <span class="contact-value"><a href="https://foustlaw.com" target="_blank">foustlaw.com</a></span>
+                                    </div>
+                                </div>
+                                <div class="attorney-address">
+                                    4641 Chambliss Ave<br>
+                                    Knoxville, TN 37919
+                                </div>
+                            </div>
+                        </div>
                     </ul>
 
-                    <h4>Option C: MCK Will Clinic (Future)</h4>
-                    <ul>
-                        <li>MCK plans to offer basic will clinic for simple situations</li>
-                        <li>Best for Muslims without complex estates or non-Muslim family</li>
-                    </ul>
                 </div>
 
                 <div class="info-box">
@@ -1055,9 +1381,9 @@
             <!-- Common Situations and Solutions Tab -->
             <div id="situations" class="tab-content">
                 <div class="tab-navigation">
-                    <button class="nav-button" onclick="previousTab()">← Previous: Steps</button>
+                    <button class="nav-button" onclick="previousTab()">Previous: Steps</button>
                     <span class="tab-counter">Section 8 of 11: Common Situations and Solutions</span>
-                    <button class="nav-button" onclick="nextTab()">Next: FAQ →</button>
+                    <button class="nav-button" onclick="nextTab()">Next: FAQ</button>
                 </div>
 
                 <h2>Common Situations and Solutions</h2>
@@ -1161,9 +1487,9 @@
             <!-- FAQ Tab -->
             <div id="faq" class="tab-content">
                 <div class="tab-navigation">
-                    <button class="nav-button" onclick="previousTab()">← Previous: Situations</button>
+                    <button class="nav-button" onclick="previousTab()">Previous: Situations</button>
                     <span class="tab-counter">Section 9 of 11: Frequently Asked Questions</span>
-                    <button class="nav-button" onclick="nextTab()">Next: Resources →</button>
+                    <button class="nav-button" onclick="nextTab()">Next: Resources</button>
                 </div>
 
                 <h2>Frequently Asked Questions</h2>
@@ -1171,90 +1497,152 @@
                 <div class="faq-section">
                     <h3>Estate Size and Planning</h3>
 
-                    <h4>Q: If you have a large estate, can you put a range on what constitutes a "large estate"?</h4>
-                    <div class="info-box">
-                        <p><strong>A:</strong> Generally, we're talking about a million dollars or more. Large estates often include expensive assets like houses, and you'll face significant tax obligations. Proper planning can save you substantial money in taxes.</p>
-                    </div>
-
-                    <h4>Q: What does Islamic law say about non-liquid assets like vehicles, property, and other assets that aren't cash?</h4>
-                    <div class="highlight-box">
-                        <p><strong>A:</strong> Everything must be shared according to Islamic teachings. All assets may need to be liquidated and distributed according to Sharia law. Islamic law makes no distinction between real property and monetary assets - whatever remains after debts and expenses must be distributed according to Islamic inheritance principles.</p>
+                    <div class="faq-item">
+                        <h4 class="faq-question" onclick="toggleFaq(this)">
+                            What does Islamic law say about non-liquid assets like vehicles, property, and other assets that aren't cash?
+                        </h4>
+                        <div class="faq-answer">
+                            <div class="highlight-box">
+                                <p><strong>Answer:</strong> Everything must be shared according to Islamic teachings. All assets may need to be liquidated and distributed according to Sharia law. Islamic law makes no distinction between real property and monetary assets - whatever remains after debts and expenses must be distributed according to Islamic inheritance principles.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
                 <div class="faq-section">
                     <h3>Family Dynamics and Challenges</h3>
 
-                    <h4>Q: What is the likelihood of family members challenging a will?</h4>
-                    <div class="warning-box">
-                        <p><strong>A:</strong> It depends on your specific family dynamics. Challenges typically arise when someone believes "I'm not getting what I'm entitled to" or suspects undue influence, such as "this benefits one person unfairly." In such cases, they may contest the will.</p>
+                    <div class="faq-item">
+                        <h4 class="faq-question" onclick="toggleFaq(this)">
+                            What is the likelihood of family members challenging a will?
+                        </h4>
+                        <div class="faq-answer">
+                            <div class="warning-box">
+                                <p><strong>Answer:</strong> It depends on your specific family dynamics. Challenges typically arise when someone believes "I'm not getting what I'm entitled to" or suspects undue influence, such as "this benefits one person unfairly." In such cases, they may contest the will.</p>
+                            </div>
+                        </div>
                     </div>
 
-                    <h4>Q: What if someone in a Muslim family has a will that doesn't comply with Sharia law? Can the family force them not to follow the will?</h4>
-                    <div class="info-box">
-                        <p><strong>A:</strong> You have a legal obligation to follow the will according to this country's laws. From an Islamic perspective, we respect the Wassiyah (bequest) and execute whatever is specified there. However, when it comes to inheritance distribution, we must follow Islamic teachings. In court, the legal will takes precedence.</p>
-                    </div>
-
-                    <h4>Q: What if you are a single parent due to widowhood?</h4>
-                    <div class="highlight-box">
-                        <p><strong>A:</strong> You need to designate both primary and secondary guardians. Consider factors such as lifestyle compatibility, religiosity, location, and the person's ability to be fiscally responsible for both the wealth (maal) and the orphaned children (yateen).</p>
+                    <div class="faq-item">
+                        <h4 class="faq-question" onclick="toggleFaq(this)">
+                            What if someone in a Muslim family passes away with a will that doesn't comply with Sharia law? Can the family decide not to follow the will?
+                        </h4>
+                        <div class="faq-answer">
+                            <div class="info-box">
+                                <p><strong>Answer:</strong> You have a legal obligation to follow the will. From an Islamic perspective, we respect the Wassiyah (bequest) and execute whatever is specified there. However, when it comes to inheritance distribution, we must follow Islamic teachings, so you should convince your loved one while they are still alive to amend their will to conform with Islamic principles. In court, the will as written takes precedence.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
                 <div class="faq-section">
                     <h3>Special Family Situations</h3>
 
-                    <h4>Q: What about adopted children in Islamic inheritance?</h4>
-                    <div class="warning-box">
-                        <p><strong>A:</strong> Under Islamic inheritance law, adopted children are not considered fixed heirs - they can only benefit from inheritance through Wassiyah (bequest). The same applies to children born outside of wedlock. While courts treat adopted children the same as biological children, Islamic Wills may make distinctions that could affect enforcement.</p>
+                    <div class="faq-item">
+                        <h4 class="faq-question" onclick="toggleFaq(this)">
+                            What about adopted children in Islamic inheritance?
+                        </h4>
+                        <div class="faq-answer">
+                            <div class="warning-box">
+                                <p><strong>Answer:</strong> Under Islamic inheritance law, adopted children are not considered fixed heirs - they can only benefit from inheritance through Wassiyah (bequest). The same applies to children born outside of wedlock. While courts treat adopted children the same as biological children, Islamic Wills may make distinctions that could affect enforcement.</p>
+                            </div>
+                        </div>
                     </div>
 
-                    <h4>Q: Can Non-Muslim family members be heirs?</h4>
-                    <div class="info-box">
-                        <p><strong>A:</strong> There is a hadith: <em>"A Muslim cannot be the heir of a disbeliever, nor can a disbeliever be the heir of a Muslim."</em> Non-Muslims are excluded from Islamic inheritance but may receive lifetime gifts or bequests from the Wasiyyah (1/3 discretionary portion).</p>
+                    <div class="faq-item">
+                        <h4 class="faq-question" onclick="toggleFaq(this)">
+                            Can Non-Muslim family members be heirs?
+                        </h4>
+                        <div class="faq-answer">
+                            <div class="info-box">
+                                <p><strong>Answer:</strong> There is a hadith: <em>"A Muslim cannot be the heir of a disbeliever, nor can a disbeliever be the heir of a Muslim."</em> Non-Muslims are excluded from Islamic inheritance but may receive lifetime gifts or bequests from the Wasiyyah (1/3 discretionary portion).</p>
+                            </div>
+                        </div>
                     </div>
 
-                    <h4>Q: What about receiving from non-Muslims?</h4>
-                    <div class="highlight-box">
-                        <p><strong>A:</strong> There is no problem with being a beneficiary of a non-Muslim relative who wishes to name you in their estate plan at their discretion.</p>
+                    <div class="faq-item">
+                        <h4 class="faq-question" onclick="toggleFaq(this)">
+                            What about receiving from non-Muslims?
+                        </h4>
+                        <div class="faq-answer">
+                            <div class="highlight-box">
+                                <p><strong>Answer:</strong> There is no problem with being a beneficiary of a non-Muslim relative who wishes to name you in their estate plan at their discretion.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
                 <div class="faq-section">
                     <h3>Islamic Law Principles</h3>
 
-                    <h4>Q: Why do sons get double what daughters get?</h4>
-                    <div class="info-box">
-                        <p><strong>A:</strong> This rule represents a connection between rights and responsibilities in Islam. It complements the Sharia law requirement that males are required to spend on the entire family unit, whereas females have no such restriction. Men have more financial duties than women do.</p>
+                    <div class="faq-item">
+                        <h4 class="faq-question" onclick="toggleFaq(this)">
+                            Why do sons get double what daughters get?
+                        </h4>
+                        <div class="faq-answer">
+                            <div class="info-box">
+                                <p><strong>Answer:</strong> This rule represents a connection between rights and responsibilities in Islam. It complements the Sharia law requirement that males are required to spend on the entire family unit, whereas females have no such restriction. Men have more financial duties than women do.</p>
+                            </div>
+                        </div>
                     </div>
 
-                    <h4>Q: Why do parents get a share of the inheritance?</h4>
-                    <div class="verse-translation">
-                        <p><strong>A:</strong> The Qur'an addresses this directly: <em>"As for your parents and your children -- you know not which of them is more deserving of benefit from you." (4:11)</em> Inheritance is the right of the heir that Allah has ordained, not our right to decide who gets what after we die.</p>
+                    <div class="faq-item">
+                        <h4 class="faq-question" onclick="toggleFaq(this)">
+                            Why do parents get a share of the inheritance?
+                        </h4>
+                        <div class="faq-answer">
+                            <div class="verse-translation">
+                                <p><strong>Answer:</strong> The Qur'an addresses this directly: <em>"As for your parents and your children -- you know not which of them is more deserving of benefit from you." (4:11)</em> Inheritance is the right of the heir that Allah has ordained, not our right to decide who gets what after we die.</p>
+                            </div>
+                        </div>
                     </div>
 
-                    <h4>Q: Can a person disinherit beneficiaries?</h4>
-                    <div class="warning-box">
-                        <p><strong>A:</strong> Disinheriting a person means taking away their Islamic right of inheritance. Example: Michael is a Muslim who has three adult children. He has not spoken to them in 10 years after a rough divorce with their mother. He wants to disinherit his children. Instead, he wants to give everything to the Masjid. Michael cannot do this in Islam. Even though giving money to the Masjid, by itself, is beneficial, he cannot do this for more than 1/3 of his estate. The rest must go to his rightful heirs in Islam. Failure to do this would make him unjust. Also, he and his children should make efforts to communicate. Muslims should also never cut off family ties. So, the answer is No.</p>
+                    <div class="faq-item">
+                        <h4 class="faq-question" onclick="toggleFaq(this)">
+                            Can a person disinherit beneficiaries?
+                        </h4>
+                        <div class="faq-answer">
+                            <div class="warning-box">
+                                <p><strong>Answer:</strong> Disinheriting a person means taking away their Islamic right of inheritance. Example: Michael is a Muslim who has three adult children. He has not spoken to them in 10 years after a rough divorce with their mother. He wants to disinherit his children. Instead, he wants to give everything to the Masjid. Michael cannot do this in Islam. Even though giving money to the Masjid, by itself, is beneficial, he cannot do this for more than 1/3 of his estate. The rest must go to his rightful heirs in Islam. Failure to do this would make him unjust. Also, he and his children should make efforts to communicate. Muslims should also never cut off family ties. So, the answer is No.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
                 <div class="faq-section">
                     <h3>Legal and Practical Issues</h3>
 
-                    <h4>Q: Who should know about the original will?</h4>
-                    <div class="steps-list">
-                        <p><strong>A:</strong> Make copies and store the original in a safe deposit box. Distribute copies to key people and inform them where the original is located. Ensure trusted individuals know how to access your important documents.</p>
+                    <div class="faq-item">
+                        <h4 class="faq-question" onclick="toggleFaq(this)">
+                            Who should know about the original will?
+                        </h4>
+                        <div class="faq-answer">
+                            <div class="steps-list">
+                                <p><strong>Answer:</strong> Make copies and store the original in a safe deposit box. Distribute copies to key people and inform them where the original is located. Ensure trusted individuals know how to access your important documents.</p>
+                            </div>
+                        </div>
                     </div>
 
-                    <h4>Q: Are trusts permissible in Islam?</h4>
-                    <div class="highlight-box">
-                        <p><strong>A:</strong> Yes, you can create trusts and put regulations on when people can access money, such as creating provisions for minor children to receive inheritance at a certain age.</p>
+                    <div class="faq-item">
+                        <h4 class="faq-question" onclick="toggleFaq(this)">
+                            Are trusts permissible in Islam?
+                        </h4>
+                        <div class="faq-answer">
+                            <div class="highlight-box">
+                                <p><strong>Answer:</strong> Yes, you can create trusts and put regulations on when people can access money, such as creating provisions for minor children to receive inheritance at a certain age.</p>
+                            </div>
+                        </div>
                     </div>
 
-                    <h4>Q: How do I ensure I have an Islamic death?</h4>
-                    <div class="info-box">
-                        <p><strong>A:</strong> You can obtain guidance cards from the Muslim Community of Knoxville (MCK) that provide instructions for Islamic end-of-life practices. (I would include here a picture of the card. The card has to be updated, by adding the following statement or similar to it: For my estate/assets distribution after my passing, check my Islamic Will & Wasiyyah by contacting (name of organization or your trusted family member) at (include phone, email, address). We can have a double -side card: one side for funeral and burial, and the other about the assets).</p>
+                    <div class="faq-item">
+                        <h4 class="faq-question" onclick="toggleFaq(this)">
+                            How do I ensure I have an Islamic death?
+                        </h4>
+                        <div class="faq-answer">
+                            <div class="info-box">
+                                <p><strong>Answer:</strong> You can obtain guidance cards from the Muslim Community of Knoxville (MCK) that provide instructions for Islamic end-of-life practices. (I would include here a picture of the card. The card has to be updated, by adding the following statement or similar to it: For my estate/assets distribution after my passing, check my Islamic Will & Wasiyyah by contacting (name of organization or your trusted family member) at (include phone, email, address). We can have a double -side card: one side for funeral and burial, and the other about the assets).</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -1262,9 +1650,9 @@
             <!-- Resources Tab -->
             <div id="resources" class="tab-content">
                 <div class="tab-navigation">
-                    <button class="nav-button" onclick="previousTab()">← Previous: FAQ</button>
+                    <button class="nav-button" onclick="previousTab()">Previous: FAQ</button>
                     <span class="tab-counter">Section 10 of 11: Resources and Contacts</span>
-                    <button class="nav-button" onclick="nextTab()">Next: Action Plan →</button>
+                    <button class="nav-button" onclick="nextTab()">Next: Action Plan</button>
                 </div>
 
                 <h2>Resources and Contacts</h2>
@@ -1272,19 +1660,23 @@
                 <h3>Islamic Inheritance Resources</h3>
 
                 <div class="contact-card">
-                    <h4>🕌 Muslim Community of Knoxville (MCK)</h4>
-                    <p><strong>Contact:</strong> [Insert current contact information]</p>
+                    <h4>Muslim Community of Knoxville (MCK)</h4>
                     <p><strong>Services:</strong> Islamic guidance, inheritance calculation assistance, emergency cards</p>
-                    <p><strong>Website:</strong> [Insert current website]</p>
-                    <p><strong>Islamic Inheritance Distribution Chart:</strong> <a href="https://muslimknoxville.org/inheritancechart25" target="_blank">muslimknoxville.org/inheritancechart25</a></p>
+                    <p><strong>Website:</strong> <a href="https://muslimknoxville.org" target="_blank">muslimknoxville.org</a></p>
+                </div>
+
+                <div class="contact-card">
+                    <h4>📊 Islamic Inheritance Distribution Chart</h4>
+                    <p><strong>Access the Chart:</strong> <a href="https://muslimknoxville.org/inheritancechart25" target="_blank">muslimknoxville.org/inheritancechart25</a></p>
+                    <p><em>Comprehensive reference for calculating Islamic inheritance distributions</em></p>
                 </div>
 
                 <div class="contact-card">
                     <h4>💻 Online Islamic Will Services</h4>
                     <ul>
-                        <li><strong>Shariawiz.com</strong> - ~$200, attorney-created (recommended by presenter)</li>
-                        <li><strong>Mywassiyah.com</strong> - Research current pricing and reviews</li>
-                        <li><strong>Muslim.estate</strong> - Research current pricing and reviews</li>
+                        <li><strong><a href="https://shariawiz.com" target="_blank">Shariawiz.com</a></strong> - ~$200, attorney-created (recommended by presenter)</li>
+                        <li><strong><a href="https://mywassiyah.com" target="_blank">Mywassiyah.com</a></strong> - Research current pricing and reviews</li>
+                        <li><strong><a href="https://muslim.estate" target="_blank">Muslim.estate</a></strong> - Research current pricing and reviews</li>
                     </ul>
                     <div class="warning-box">
                         <strong>Always have attorney review documents from online services</strong>
@@ -1296,15 +1688,62 @@
                 <div class="contact-card">
                     <h4>⚖️ Attorneys with Islamic Estate Planning Experience</h4>
 
-                    <h5>Jonathan Reed</h5>
-                    <p>Egerton McAfee Law Firm<br>
-                    Downtown Knoxville<br>
-                    <em>Ask for Katrina (his assistant) - very helpful<br>
-                    Extensive experience with Muslim clients and Islamic wills</em></p>
+                    <div class="attorney-grid">
+                        <div class="attorney-card attorney-card-primary">
+                            <div class="attorney-header">
+                                <h5>Jonathan Reed</h5>
+                                <span class="attorney-badge">Estate Planning Specialist</span>
+                            </div>
+                            <div class="attorney-firm">Egerton McAfee Law Firm</div>
+                            <div class="attorney-contact">
+                                <div class="contact-item">
+                                    <span class="contact-label">Phone:</span>
+                                    <span class="contact-value">(865) 546-0500</span>
+                                </div>
+                                <div class="contact-item">
+                                    <span class="contact-label">Email:</span>
+                                    <span class="contact-value">information@emlaw.com</span>
+                                </div>
+                                <div class="contact-item">
+                                    <span class="contact-label">Website:</span>
+                                    <span class="contact-value"><a href="https://emlaw.com" target="_blank">emlaw.com</a></span>
+                                </div>
+                            </div>
+                            <div class="attorney-address">
+                                900 S Gay St, 14th Floor<br>
+                                Knoxville, TN 37902
+                            </div>
+                            <div class="attorney-note">
+                                <strong>Tip:</strong> Ask for Katrina (his assistant) - very helpful
+                            </div>
+                        </div>
 
-                    <h5>John R. Foust</h5>
-                    <p>Solo Practitioner<br>
-                    <em>Younger attorney who has reached out to learn about Muslim community needs</em></p>
+                        <div class="attorney-card attorney-card-secondary">
+                            <div class="attorney-header">
+                                <h5>John R. Foust</h5>
+                                <span class="attorney-badge">Solo Practitioner</span>
+                            </div>
+                            <div class="attorney-firm">Foust Law</div>
+                            <div class="attorney-contact">
+                                <div class="contact-item">
+                                    <span class="contact-label">Phone:</span>
+                                    <span class="contact-value">(865) 203-4041</span>
+                                </div>
+                                <div class="contact-item">
+                                    <span class="contact-label">Email:</span>
+                                    <span class="contact-value">rfoust@foustlaw.com</span>
+                                </div>
+                                <div class="contact-item">
+                                    <span class="contact-label">Website:</span>
+                                    <span class="contact-value"><a href="https://foustlaw.com" target="_blank">foustlaw.com</a></span>
+                                </div>
+                            </div>
+                            <div class="attorney-address">
+                                4641 Chambliss Ave<br>
+                                Knoxville, TN 37919
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="info-box">
@@ -1323,8 +1762,9 @@
 
                 <div class="contact-card">
                     <h4>📋 Advanced Healthcare Directive Forms</h4>
+                    <p><strong>Download Form:</strong> <a href="https://www.tn.gov/content/dam/tn/health/documents/Advance_Directive_for_Health_Care.pdf" target="_blank">Tennessee Advanced Directive for Health Care (PDF)</a></p>
                     <ul>
-                        <li>Available from Tennessee state website</li>
+                        <li>Official Tennessee state form</li>
                         <li>Can be obtained from MCK</li>
                         <li>Hospital social workers can provide</li>
                     </ul>
@@ -1385,9 +1825,9 @@
             <!-- Your Action Plan Tab -->
             <div id="action" class="tab-content">
                 <div class="tab-navigation">
-                    <button class="nav-button" onclick="previousTab()">← Previous: Resources</button>
+                    <button class="nav-button" onclick="previousTab()">Previous: Resources</button>
                     <span class="tab-counter">Section 11 of 11: Your Action Plan</span>
-                    <button class="nav-button" onclick="nextTab()" disabled>Complete! ✓</button>
+                    <button class="nav-button" onclick="nextTab()" disabled>Complete!</button>
                 </div>
 
                 <h2>Your Action Plan</h2>
@@ -1783,7 +2223,7 @@
                 // Update previous button
                 prevBtn.disabled = currentTabIndex === 0;
                 if (currentTabIndex > 0) {
-                    prevBtn.textContent = `← Previous: ${getShortTabName(currentTabIndex - 1)}`;
+                    prevBtn.textContent = `Previous: ${getShortTabName(currentTabIndex - 1)}`;
                 }
 
                 // Update counter
@@ -1792,10 +2232,10 @@
                 // Update next button
                 if (currentTabIndex < tabs.length - 1) {
                     nextBtn.disabled = false;
-                    nextBtn.textContent = `Next: ${getShortTabName(currentTabIndex + 1)} →`;
+                    nextBtn.textContent = `Next: ${getShortTabName(currentTabIndex + 1)}`;
                 } else {
                     nextBtn.disabled = true;
-                    nextBtn.textContent = 'Complete! ✓';
+                    nextBtn.textContent = 'Complete!';
                 }
             }
         }
@@ -1825,6 +2265,20 @@
                 }
             }
         });
+
+        // FAQ Toggle functionality
+        function toggleFaq(questionElement) {
+            const answer = questionElement.nextElementSibling;
+            const isActive = questionElement.classList.contains('active');
+
+            if (isActive) {
+                questionElement.classList.remove('active');
+                answer.classList.remove('active');
+            } else {
+                questionElement.classList.add('active');
+                answer.classList.add('active');
+            }
+        }
     </script>
 </body>
 </html>
