@@ -1,0 +1,1830 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Islamic Estate Planning Guide - Comprehensive Reference</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', 'Times New Roman', serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f9f7f5;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            overflow: hidden;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .header {
+            background: #7a0f12;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .header h1 {
+            font-family: 'Georgia', 'Times New Roman', serif;
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+        }
+
+        .header .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            margin-bottom: 1rem;
+            font-weight: normal;
+        }
+
+        .header .attribution {
+            font-size: 0.9rem;
+            opacity: 0.8;
+            font-style: italic;
+        }
+
+        .nav-container {
+            background: #f9f7f5;
+            border-bottom: 3px solid #7a0f12;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .nav-tabs {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 1px;
+            background: #7a0f12;
+            padding: 1px;
+        }
+
+        .nav-tab {
+            background: white;
+            border: none;
+            color: #7a0f12;
+            padding: 1rem 0.5rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 0.9rem;
+            font-weight: bold;
+            text-align: center;
+            font-family: 'Georgia', 'Times New Roman', serif;
+        }
+
+        .nav-tab:hover {
+            background: #f9f7f5;
+            color: #7a0f12;
+        }
+
+        .nav-tab.active {
+            background: #7a0f12;
+            color: white;
+        }
+
+        .progress-bar {
+            height: 4px;
+            background: #f9f7f5;
+            position: relative;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: #547a2e;
+            width: 10%;
+            transition: width 0.3s ease;
+        }
+
+        .content {
+            padding: 2rem;
+            max-height: 75vh;
+            overflow-y: auto;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .tab-content {
+            display: none;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        .tab-navigation {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2rem;
+            padding: 1rem;
+            background: #f9f7f5;
+            border: 2px solid #7a0f12;
+        }
+
+        .nav-button {
+            background: #547a2e;
+            color: white;
+            border: none;
+            padding: 0.8rem 1.5rem;
+            cursor: pointer;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            font-family: 'Georgia', 'Times New Roman', serif;
+        }
+
+        .nav-button:hover {
+            background: #3d5a21;
+        }
+
+        .nav-button:disabled {
+            background: #ccc;
+            cursor: not-allowed;
+        }
+
+        .tab-counter {
+            font-weight: bold;
+            color: #7a0f12;
+            font-family: 'Georgia', 'Times New Roman', serif;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Georgia', 'Times New Roman', serif;
+        }
+
+        h2 {
+            color: #7a0f12;
+            border-bottom: 3px solid #547a2e;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+
+        h3 {
+            color: #7a0f12;
+            margin: 1.5rem 0 1rem 0;
+            font-size: 1.3rem;
+            border-left: 4px solid #547a2e;
+            padding-left: 1rem;
+            font-weight: bold;
+        }
+
+        h4 {
+            color: #7a0f12;
+            margin: 1rem 0 0.5rem 0;
+            font-size: 1.1rem;
+            font-weight: bold;
+        }
+
+        /* Fix heading colors inside colored boxes */
+        .highlight-box h3,
+        .highlight-box h4,
+        .highlight-box h5 {
+            color: white;
+        }
+
+        .warning-box h3,
+        .warning-box h4,
+        .warning-box h5 {
+            color: #7a0f12;
+        }
+
+        .info-box h3,
+        .info-box h4,
+        .info-box h5 {
+            color: #7a0f12;
+        }
+
+        .calculation-box h3,
+        .calculation-box h4,
+        .calculation-box h5 {
+            color: #7a0f12;
+        }
+
+        .highlight-box {
+            background: #7a0f12;
+            color: white;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border: 2px solid #7a0f12;
+        }
+
+        .warning-box {
+            background: white;
+            color: #7a0f12;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border: 3px solid #7a0f12;
+        }
+
+        .info-box {
+            background: #f9f7f5;
+            color: #333;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border: 2px solid #547a2e;
+            border-left: 6px solid #547a2e;
+        }
+
+        .calculation-box {
+            background: white;
+            border: 2px solid #7a0f12;
+            padding: 1.5rem;
+            margin: 1rem 0;
+        }
+
+        .example-case {
+            background: #f9f7f5;
+            padding: 1.5rem;
+            margin: 1rem 0;
+            border-left: 6px solid #547a2e;
+            border-top: 2px solid #547a2e;
+            border-bottom: 2px solid #547a2e;
+            border-right: 2px solid #547a2e;
+        }
+
+        .steps-list {
+            background: #f9f7f5;
+            padding: 1.5rem;
+            margin: 1rem 0;
+            border: 1px solid #ccc;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+            background: white;
+            border: 2px solid #7a0f12;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border: 1px solid #7a0f12;
+            font-family: 'Arial', sans-serif;
+        }
+
+        th {
+            background: #7a0f12;
+            color: white;
+            font-weight: bold;
+            font-family: 'Georgia', 'Times New Roman', serif;
+        }
+
+        tr:nth-child(even) {
+            background: #f9f7f5;
+        }
+
+        tr:hover {
+            background: #e8e6e1;
+        }
+
+        ul, ol {
+            margin: 1rem 0;
+            padding-left: 2rem;
+        }
+
+        li {
+            margin: 0.5rem 0;
+        }
+
+        .arabic-text {
+            font-family: 'Times New Roman', serif;
+            font-size: 1.3rem;
+            line-height: 2;
+            text-align: right;
+            background: #f9f7f5;
+            padding: 1rem;
+            margin: 1rem 0;
+            border: 1px solid #ccc;
+            color: #333;
+        }
+
+        .verse-translation {
+            font-style: italic;
+            color: #333;
+            background: #f9f7f5;
+            padding: 1rem;
+            border-left: 4px solid #547a2e;
+            margin: 0.5rem 0;
+            font-size: 1rem;
+        }
+
+        .contact-card {
+            background: white;
+            border: 2px solid #7a0f12;
+            padding: 1rem;
+            margin: 1rem 0;
+        }
+
+        .worksheet {
+            background: white;
+            border: 2px solid #7a0f12;
+            padding: 2rem;
+            margin: 2rem 0;
+            font-family: 'Courier New', monospace;
+        }
+
+        .worksheet h4 {
+            font-family: 'Georgia', 'Times New Roman', serif;
+            color: #7a0f12;
+            border-bottom: 2px solid #7a0f12;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .worksheet-line {
+            border-bottom: 1px solid #333;
+            display: inline-block;
+            min-width: 200px;
+            margin: 0 5px;
+        }
+
+        .worksheet-table {
+            width: 100%;
+            margin: 1rem 0;
+            border-collapse: collapse;
+        }
+
+        .worksheet-table th,
+        .worksheet-table td {
+            border: 1px solid #333;
+            padding: 8px;
+            text-align: left;
+        }
+
+        .worksheet-table th {
+            background: #f9f7f5;
+            font-weight: bold;
+        }
+
+        .worksheet-section {
+            margin: 2rem 0;
+            padding: 1rem 0;
+            border-top: 1px dashed #7a0f12;
+        }
+
+        .checklist {
+            background: #f9f7f5;
+            padding: 1.5rem;
+            margin: 1rem 0;
+            border: 2px solid #547a2e;
+        }
+
+        .checklist h4 {
+            color: #547a2e;
+            margin-bottom: 1rem;
+            font-family: 'Georgia', 'Times New Roman', serif;
+        }
+
+        .checklist label {
+            display: block;
+            margin: 0.8rem 0;
+            cursor: pointer;
+            font-weight: normal;
+        }
+
+        .checklist input[type="checkbox"] {
+            margin-right: 0.8rem;
+            transform: scale(1.3);
+            accent-color: #547a2e;
+        }
+
+        .urgent {
+            animation: pulse 2s infinite;
+            border: 3px solid #7a0f12 !important;
+        }
+
+        @keyframes pulse {
+            0% { border-color: #7a0f12; }
+            50% { border-color: #a01317; }
+            100% { border-color: #7a0f12; }
+        }
+
+        .faq-section {
+            margin: 2rem 0;
+        }
+
+        .faq-section h4 {
+            background: #f9f7f5;
+            padding: 1rem;
+            margin: 1rem 0 0 0;
+            border: 2px solid #7a0f12;
+            cursor: pointer;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                margin: 0.5rem;
+            }
+
+            .header h1 {
+                font-size: 2rem;
+            }
+
+            .nav-tabs {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 1px;
+            }
+
+            .nav-tab {
+                padding: 0.7rem 0.3rem;
+                font-size: 0.7rem;
+            }
+
+            .content {
+                padding: 1rem;
+                max-height: 70vh;
+            }
+
+            .tab-navigation {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .nav-button {
+                width: 100%;
+            }
+
+            .nav-container {
+                position: sticky;
+                top: 0;
+            }
+        }
+
+        /* Print styles */
+        @media print {
+            .nav-container, .tab-navigation {
+                display: none;
+            }
+            .content {
+                max-height: none;
+                overflow: visible;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🕌 Islamic Will and Estate Planning Guide</h1>
+            <div class="subtitle">A Reference for Muslims in Tennessee</div>
+            <div class="attribution">Muslim Community of Knoxville | Your complete guide to creating an Islamic Will that complies with Tennessee law</div>
+        </div>
+
+        <div class="nav-container">
+            <div class="nav-tabs">
+                <button class="nav-tab active" onclick="showTab('overview', 0)">1. Overview</button>
+                <button class="nav-tab" onclick="showTab('foundations', 1)">2. Foundations</button>
+                <button class="nav-tab" onclick="showTab('inheritance', 2)">3. Rules</button>
+                <button class="nav-tab" onclick="showTab('distribution', 3)">4. Distribution</button>
+                <button class="nav-tab" onclick="showTab('tennessee', 4)">5. TN Law</button>
+                <button class="nav-tab" onclick="showTab('documents', 5)">6. Documents</button>
+                <button class="nav-tab" onclick="showTab('stepbystep', 6)">7. Steps</button>
+                <button class="nav-tab" onclick="showTab('situations', 7)">8. Situations</button>
+                <button class="nav-tab" onclick="showTab('faq', 8)">9. FAQ</button>
+                <button class="nav-tab" onclick="showTab('resources', 9)">10. Resources</button>
+                <button class="nav-tab" onclick="showTab('action', 10)">11. Action Plan</button>
+            </div>
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressFill"></div>
+            </div>
+        </div>
+
+        <div class="content">
+            <!-- Why You Need an Islamic Will Tab -->
+            <div id="overview" class="tab-content active">
+                <div class="tab-navigation">
+                    <button class="nav-button" onclick="previousTab()" id="prevBtn" disabled>← Previous</button>
+                    <span class="tab-counter">Section 1 of 11: Why You Need an Islamic Will</span>
+                    <button class="nav-button" onclick="nextTab()" id="nextBtn">Next: Foundations →</button>
+                </div>
+
+                <h2>Why You Need an Islamic Will</h2>
+
+                <h3>Without an Islamic Will in Tennessee:</h3>
+                <div class="warning-box urgent">
+                    <ul>
+                        <li><strong>State law decides everything</strong> - Tennessee Intestate Succession Laws will distribute your wealth</li>
+                        <li><strong>Conflicts with Islam</strong> - Spouses get 1/3 minimum, parents may get nothing, no 2:1 son/daughter ratio</li>
+                        <li><strong>No "Wasiyyah"</strong> - Cannot designate 1/3 for charity or non-heirs</li>
+                        <li><strong>Wrong burial</strong> - Non-Muslim family may cremate or use non-Islamic burial</li>
+                        <li><strong>Wrong guardians</strong> - State may choose guardians you wouldn't want for your children</li>
+                    </ul>
+                </div>
+
+                <h3>With an Islamic Will:</h3>
+                <div class="highlight-box">
+                    <ul>
+                        <li><strong>Follow Qur'anic commands</strong> for wealth distribution</li>
+                        <li><strong>Ensure Islamic burial</strong> and funeral rites</li>
+                        <li><strong>Choose your executors</strong> and children's guardians</li>
+                        <li><strong>Make Wasiyyah</strong> for charity or non-heir family members</li>
+                        <li><strong>Avoid family conflicts</strong> with clear divine guidance</li>
+                    </ul>
+                </div>
+
+                <h3>Quick Start Guide</h3>
+                <div class="info-box">
+                    <p>This comprehensive reference contains everything you need to create your Islamic Will and complete your estate planning. It consolidates all information from our workshop into one actionable guide you can reference throughout the process.</p>
+                    <p><strong>Quick Start:</strong> Jump to <a href="#action" onclick="showTab('action', 10)">Action Steps</a> for immediate next steps, or read through completely for full understanding.</p>
+                </div>
+            </div>
+
+            <!-- Islamic Foundations Tab -->
+            <div id="foundations" class="tab-content">
+                <div class="tab-navigation">
+                    <button class="nav-button" onclick="previousTab()" id="prevBtn">← Previous: Overview</button>
+                    <span class="tab-counter">Section 2 of 11: Islamic Foundations of Inheritance</span>
+                    <button class="nav-button" onclick="nextTab()" id="nextBtn">Next: Rules →</button>
+                </div>
+
+                <h2>Islamic Foundations of Inheritance</h2>
+
+                <h3>Core Islamic Principles</h3>
+
+                <div class="highlight-box">
+                    <h4>1. Wealth Belongs to Allah</h4>
+                    <ul>
+                        <li>We are trustees, not owners of wealth</li>
+                        <li>Allah has dominion over everything on Earth</li>
+                        <li>Proper distribution is an act of worship</li>
+                    </ul>
+                </div>
+
+                <div class="info-box">
+                    <h4>2. Divine Justice System</h4>
+                    <ul>
+                        <li>Islamic inheritance prevents favoritism and subjectivity (= injustice)</li>
+                        <li>Protects family unity and prevents disputes</li>
+                        <li>Ensures justice for all family members and avoid amassing wealth and control in one hand</li>
+                    </ul>
+                </div>
+
+                <h3>Qur'anic & Prophetic (Sunnah) Foundations</h3>
+                <div class="info-box">
+                    <h4>The Qur'an:</h4>
+                    <p>Based on <strong>Surah An-Nisa (4:9, 11, 12, 176)</strong>, which provide complete inheritance formulas that we must follow.</p>
+                </div>
+
+                <div class="arabic-text">
+                    وَلْيَخْشَ ٱلَّذِينَ لَوْ تَرَكُوا۟ مِنْ خَلْفِهِمْ ذُرِّيَّةًۭ ضِعَـٰفًا خَافُوا۟ عَلَيْهِمْ فَلْيَتَّقُوا۟ ٱللَّهَ وَلْيَقُولُوا۟ قَوْلًۭا سَدِيدًا
+                </div>
+
+                <div class="verse-translation">
+                    <strong>An-Nisa 4:9:</strong> "And let those executors and guardians fear as if they themselves had left weak offspring behind and feared for them. So let them fear Allah and speak words of appropriate justice."
+                </div>
+
+                <div class="arabic-text">
+                    يُوصِيكُمُ ٱللَّهُ فِى أَوْلَـٰدِكُمْ ۖ لِلذَّكَرِ مِثْلُ حَظِّ ٱلْأُنثَيَيْنِ ۚ فَإِن كُنَّ نِسَآءًۭ فَوْقَ ٱثْنَتَيْنِ فَلَهُنَّ ثُلُثَا مَا تَرَكَ ۖ وَإِن كَانَتْ وَٰحِدَةًۭ فَلَهَا ٱلنِّصْفُ ۚ وَلِأَبَوَيْهِ لِكُلِّ وَٰحِدٍۢ مِّنْهُمَا ٱلسُّدُسُ مِمَّا تَرَكَ إِن كَانَ لَهُۥ وَلَدٌۭ ۚ فَإِن لَّمْ يَكُن لَّهُۥ وَلَدٌۭ وَوَرِثَهُۥٓ أَبَوَاهُ فَلِأُمِّهِ ٱلثُّلُثُ ۚ فَإِن كَانَ لَهُۥٓ إِخْوَةٌۭ فَلِأُمِّهِ ٱلسُّدُسُ ۚ مِنۢ بَعْدِ وَصِيَّةٍۢ يُوصِى بِهَآ أَوْ دَيْنٍ ۗ ءَابَآؤُكُمْ وَأَبْنَآؤُكُمْ لَا تَدْرُونَ أَيُّهُمْ أَقْرَبُ لَكُمْ نَفْعًۭا ۚ فَرِيضَةًۭ مِّنَ ٱللَّهِ ۗ إِنَّ ٱللَّهَ كَانَ عَلِيمًا حَكِيمًۭا
+                </div>
+
+                <div class="verse-translation">
+                    <strong>An-Nisa 4:11:</strong> "Allah instructs you concerning your children: for the male, what is equal to the share of two females. But if there are [only] daughters, two or more, for them is two-thirds of one's estate. And if there is only one, for her is half. And for one's parents, to each one of them is a sixth of his estate if he left children. But if he had no children and the parents [alone] inherit from him, then for his mother is one third. And if he had brothers [or sisters], for his mother is a sixth, after any bequest he [may have] made or debt. Your parents or your children – you know not which of them are nearest to you in benefit. [These shares are] an obligation [imposed] by Allah. Indeed, Allah is ever Knowing and Wise."
+                </div>
+
+                <h3>Essential Hadith on Inheritance</h3>
+
+                <div class="verse-translation">
+                    <strong>On the Importance of Wills:</strong><br>
+                    "It is the duty of a Muslim who has anything to bequest not to let two nights pass without writing a will about it." <em>(Sahih al-Bukhari)</em>
+                </div>
+
+                <div class="verse-translation">
+                    <strong>On Inheritance Knowledge:</strong><br>
+                    "Learn the Science of Inheritance because it is from your religion, it is half of knowledge, and it is the first knowledge that would be removed from my nation." <em>(Al-Hakim)</em>
+                </div>
+
+                <div class="warning-box">
+                    <h4>Warning Against Harm:</h4>
+                    <ul>
+                        <li>"Causing harm in a will is one of the major sins." <em>(Al-Darakutni)</em></li>
+                        <li>"A man may act in obedience to Allah for sixty years, and a woman likewise, but when death approaches them, they cause harm in the will, so the Fire becomes their due." <em>(Abu Dawud)</em></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Understanding Islamic Inheritance Rules Tab -->
+            <div id="inheritance" class="tab-content">
+                <div class="tab-navigation">
+                    <button class="nav-button" onclick="previousTab()">← Previous: Foundations</button>
+                    <span class="tab-counter">Section 3 of 11: Understanding Islamic Inheritance Rules</span>
+                    <button class="nav-button" onclick="nextTab()">Next: Distribution →</button>
+                </div>
+
+                <h2>Understanding Islamic Inheritance Rules</h2>
+
+                <h3>The Two-Part System</h3>
+
+                <div class="highlight-box">
+                    <h4>Part 1: Mirath (Fara'id) - 2/3 of Estate/Wealth</h4>
+                    <ul>
+                        <li><strong>Fixed by Allah</strong> - you have no choice/control in distribution</li>
+                        <li><strong>Must go to qualified Islamic heirs</strong> in prescribed proportions</li>
+                        <li><strong>Cannot be changed</strong> to give more or less to anyone</li>
+                    </ul>
+                </div>
+
+                <div class="info-box">
+                    <h4>Part 2: Wasiyyah - Up to 1/3 of Estate/Wealth</h4>
+                    <ul>
+                        <li><strong>Your discretionary choice</strong> - can go to anyone except existing heirs</li>
+                        <li><strong>Not required</strong> - you can give 100% of your wealth to Islamic heirs if you prefer</li>
+                        <li><strong>Common uses:</strong> Charity (Sadaqah), Islamic institutions (mosques, schools, relief organizations, etc.), non-Muslim family members, distant relatives, adopted children</li>
+                    </ul>
+                </div>
+
+                <h3>Categories of Islamic Heirs</h3>
+
+                <table>
+                    <tr>
+                        <th>Category</th>
+                        <th>Who They Are</th>
+                        <th>When They Inherit</th>
+                    </tr>
+                    <tr>
+                        <td><strong>Primary (Fixed) Heirs<br>Ashab-ul-Furud</strong></td>
+                        <td>Spouse (husband or wife)<br>Children (sons and daughters)<br>Parents (mother and father)</td>
+                        <td>Always inherit if alive and Muslim</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Secondary (Contingent) Heirs<br>Al-Asabah</strong></td>
+                        <td>Grandchildren, grandparents<br>Siblings (full, half, maternal, paternal)<br>Aunts, uncles, nieces, nephews</td>
+                        <td>Inherit when no primary heirs exist</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Extended Family<br>Dhawul-Arham</strong></td>
+                        <td>Distant relatives</td>
+                        <td>Inherit only when no primary or secondary heirs exist</td>
+                    </tr>
+                </table>
+
+                <h3>Fixed Inheritance Shares</h3>
+
+                <div class="calculation-box">
+                    <h4>Spousal Shares:</h4>
+                    <ul>
+                        <li><strong>Husband gets 1/2</strong> if wife has no children</li>
+                        <li><strong>Husband gets 1/4</strong> if wife has children</li>
+                        <li><strong>Wife gets 1/4</strong> if husband has no children</li>
+                        <li><strong>Wife gets 1/8</strong> if husband has children</li>
+                    </ul>
+                </div>
+
+                <div class="calculation-box">
+                    <h4>Parental Shares:</h4>
+                    <ul>
+                        <li><strong>Each parent gets 1/6</strong> if deceased has children</li>
+                        <li><strong>Mother gets 1/3</strong> if deceased has no children (father gets remainder)</li>
+                        <li><strong>Mother gets 1/6</strong> if deceased has siblings</li>
+                    </ul>
+                </div>
+
+                <div class="calculation-box">
+                    <h4>Children's Shares:</h4>
+                    <ul>
+                        <li><strong>Sons get twice daughters' share</strong> (2:1 ratio)</li>
+                        <li><strong>Multiple daughters get 2/3</strong> if no sons</li>
+                        <li><strong>Single daughter gets 1/2</strong> if no sons</li>
+                        <li>Remaining estate after spousal/parental shares distributed</li>
+                    </ul>
+                </div>
+
+                <h3>Who Cannot Inherit Under Islamic Law</h3>
+                <div class="warning-box">
+                    <ul>
+                        <li><strong>Non-Muslims:</strong> including family members who left Islam</li>
+                        <li><strong>Adopted children:</strong> can receive from Wasiyyah only</li>
+                        <li><strong>Children born outside wedlock (الأطفال المولودون خارج إطار الزواج - <em>al-aṭfāl al-mawlūdūn khārij iṭār az-zawāj</em>):</strong> can receive from Wasiyyah only</li>
+                        <li><strong>Anyone who killed the deceased</strong></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Islamic Steps of Estate/Wealth Distribution Tab -->
+            <div id="distribution" class="tab-content">
+                <div class="tab-navigation">
+                    <button class="nav-button" onclick="previousTab()">← Previous: Rules</button>
+                    <span class="tab-counter">Section 4 of 11: Islamic Steps of Estate/Wealth Distribution</span>
+                    <button class="nav-button" onclick="nextTab()">Next: TN Law →</button>
+                </div>
+
+                <h2>Islamic Steps of Estate/Wealth Distribution</h2>
+
+                <div class="info-box">
+                    <p>When a Muslim person passes away, there is a strict process of Islamic wealth distribution that should take place. The steps are as follows:</p>
+                </div>
+
+                <div class="steps-list">
+                    <h3>Strict order that must be followed:</h3>
+                    <ol>
+                        <li><strong>Covering the cost of a modest funeral</strong> - If deceased has nothing, it's fard kifayah on Muslims</li>
+                        <li><strong>Paying back any personal debts or loans</strong> - All current debts must be paid before any distribution</li>
+                        <li><strong>Paying for unfinished Islamic obligations</strong> (e.g., fidyah or unpaid zakat)</li>
+                        <li><strong>Distributing up to one-third of the estate in one's discretion, including any Lifetime Gifts (*if applicable)</strong> - Wasiyyah portion</li>
+                        <li><strong>Distributing the remaining two-thirds or all the estate/wealth (known as the mirath) among the heirs</strong> - Fixed Islamic inheritance distribution</li>
+                    </ol>
+                </div>
+
+                <h3>Key Principles</h3>
+                <div class="highlight-box">
+                    <h4>Order Cannot Be Changed</h4>
+                    <p>This sequence is mandated by Islamic law and must be followed precisely. No distribution to heirs can occur until all previous steps are completed.</p>
+                </div>
+
+                <div class="warning-box">
+                    <h4>Common Mistakes to Avoid</h4>
+                    <ul>
+                        <li>Distributing inheritance before paying debts</li>
+                        <li>Ignoring religious obligations like unpaid zakat</li>
+                        <li>Exceeding 1/3 limit for wasiyyah</li>
+                        <li>Not following the exact sequence</li>
+                    </ul>
+                </div>
+
+                <h3>Lifetime Gifts</h3>
+                <div class="info-box">
+                    <p><strong>Good news:</strong> Islam generally does not restrict gifts given during your lifetime.</p>
+                    <ul>
+                        <li>You can give gifts to anyone, even non-Muslims</li>
+                        <li>Can be structured as part of estate planning</li>
+                        <li><strong>Restrictions:</strong> Cannot give with intent to interfere with inheritance rights or cause injustice</li>
+                        <li><strong>"Final sickness" concept:</strong> Gifts given on deathbed may be restricted</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Tennessee Legal Requirements Tab -->
+            <div id="tennessee" class="tab-content">
+                <div class="tab-navigation">
+                    <button class="nav-button" onclick="previousTab()">← Previous: Distribution</button>
+                    <span class="tab-counter">Section 5 of 11: Tennessee Legal Requirements</span>
+                    <button class="nav-button" onclick="nextTab()">Next: Documents →</button>
+                </div>
+
+                <h2>Tennessee Legal Requirements</h2>
+
+                <h3>What Happens Without a Will (Intestate Succession)</h3>
+                <div class="warning-box">
+                    <p>Tennessee law distributes as follows:</p>
+                    <ol>
+                        <li><strong>Spouse gets everything</strong> if no children/grandchildren</li>
+                        <li><strong>Spouse and children share</strong> if both exist (spouse gets minimum 1/3)</li>
+                        <li><strong>Parents inherit</strong> if no spouse/children</li>
+                        <li><strong>Siblings inherit</strong> if no parents</li>
+                        <li><strong>Extended family</strong> in order of closeness</li>
+                    </ol>
+                </div>
+
+                <h3>Property Ownership Rules</h3>
+                <table>
+                    <tr>
+                        <th>Property Type</th>
+                        <th>What Happens</th>
+                    </tr>
+                    <tr>
+                        <td><strong>Joint Property</strong></td>
+                        <td>Surviving spouse automatically gets entire property (right of survivorship)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Individual Property</strong></td>
+                        <td>Subject to will or intestate succession laws</td>
+                    </tr>
+                </table>
+
+                <h3>Legal Document Requirements</h3>
+
+                <div class="highlight-box">
+                    <h4>Wills Must Be:</h4>
+                    <ul>
+                        <li><strong>In writing</strong> (typed or completely handwritten)</li>
+                        <li><strong>Signed by you</strong> in presence of two witnesses</li>
+                        <li><strong>Witnessed by two people</strong> who see you sign and see each other sign</li>
+                        <li><strong>Specific to Tennessee law</strong> (though valid in other states)</li>
+                    </ul>
+                </div>
+
+                <div class="info-box">
+                    <h4>Powers of Attorney and Healthcare Directives:</h4>
+                    <ul>
+                        <li><strong>Two witnesses OR notarization</strong></li>
+                        <li><strong>Specific legal language</strong> required</li>
+                        <li><strong>Durable provisions</strong> for incapacity</li>
+                    </ul>
+                </div>
+
+                <h3>Tennessee Spousal Rights</h3>
+                <div class="warning-box urgent">
+                    <h4>🚨 CRITICAL: Tennessee Spousal Rights</h4>
+                    <p><strong>Critical:</strong> Tennessee gives spouses <strong>minimum 1/3 of estate</strong> regardless of will content.</p>
+
+                    <p><strong>To implement Islamic inheritance:</strong> <strong>spouse must sign "Marital Agreement to Waive Elective Share"</strong> - witnessed and notarized.</p>
+                </div>
+            </div>
+
+            <!-- Your Three Essential Documents Tab -->
+            <div id="documents" class="tab-content">
+                <div class="tab-navigation">
+                    <button class="nav-button" onclick="previousTab()">← Previous: TN Law</button>
+                    <span class="tab-counter">Section 6 of 11: Your Three Essential Documents</span>
+                    <button class="nav-button" onclick="nextTab()">Next: Steps →</button>
+                </div>
+
+                <h2>Your Three Essential Documents</h2>
+
+                <div class="highlight-box">
+                    <h3>Document 1: Last Will and Testament</h3>
+                    <p><strong>Purpose:</strong> Directs property distribution, appoints executors, specifies burial wishes, names guardians</p>
+
+                    <p><strong>Must Include:</strong></p>
+                    <ul>
+                        <li>Family identification (spouse, children with birth dates)</li>
+                        <li>Executor appointment (primary and alternate)</li>
+                        <li>Islamic burial instructions</li>
+                        <li>Debt payment order</li>
+                        <li>Wasiyyah distributions (if any)</li>
+                        <li>Islamic inheritance distribution statement</li>
+                        <li>Guardianship appointments for minor children</li>
+                        <li>Asset listing</li>
+                    </ul>
+                </div>
+
+                <div class="info-box">
+                    <h3>Document 2: General Durable Power of Attorney</h3>
+                    <p><strong>Purpose:</strong> Allows someone to handle financial matters if you become incapacitated</p>
+
+                    <p><strong>Covers:</strong></p>
+                    <ul>
+                        <li>Banking and bill paying</li>
+                        <li>Real estate transactions</li>
+                        <li>Insurance matters</li>
+                        <li>Tax filings</li>
+                        <li>Investment decisions</li>
+                    </ul>
+
+                    <div class="warning-box">
+                        <strong>Choose someone you trust completely</strong> - they have significant power over your finances.
+                    </div>
+                </div>
+
+                <div class="highlight-box">
+                    <h3>Document 3: Advanced Directive for Healthcare</h3>
+                    <p><strong>Purpose:</strong> Appoints healthcare decision-maker and specifies medical preferences</p>
+
+                    <p><strong>Includes:</strong></p>
+                    <ul>
+                        <li>Healthcare power of attorney</li>
+                        <li>Living will preferences</li>
+                        <li>End-of-life care instructions</li>
+                        <li>Organ donation wishes</li>
+                    </ul>
+
+                    <p><strong>Available from:</strong> Tennessee state website or MCK can provide forms</p>
+                </div>
+
+                <h3>Consequences of Missing Documents</h3>
+
+                <table>
+                    <tr>
+                        <th>Missing Document</th>
+                        <th>Consequences</th>
+                    </tr>
+                    <tr>
+                        <td><strong>Without Power of Attorney</strong></td>
+                        <td>Bills go unpaid during incapacity<br>Family cannot access accounts<br>May need court-appointed guardian</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Without Healthcare Directive</strong></td>
+                        <td>Unknown people may make life/death decisions<br>Family conflicts over medical care<br>Non-Islamic end-of-life treatment</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Without Islamic Will</strong></td>
+                        <td>Tennessee law controls distribution<br>No Islamic burial guarantee<br>No Wasiyyah for charity<br>State chooses children's guardians</td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- Creating Your Islamic Will - Step by Step Tab -->
+            <div id="stepbystep" class="tab-content">
+                <div class="tab-navigation">
+                    <button class="nav-button" onclick="previousTab()">← Previous: Documents</button>
+                    <span class="tab-counter">Section 7 of 11: Creating Your Islamic Will - Step by Step</span>
+                    <button class="nav-button" onclick="nextTab()">Next: Situations →</button>
+                </div>
+
+                <h2>Creating Your Islamic Will - Step by Step</h2>
+
+                <div class="steps-list">
+                    <h3>Step 1: Gather Information</h3>
+
+                    <h4>Family Information:</h4>
+                    <ul>
+                        <li>Full names and birth dates of spouse and children</li>
+                        <li>Names and addresses of parents, siblings</li>
+                        <li>Relationship status of all potential heirs</li>
+                        <li>Religious status (Muslim/non-Muslim) of family members</li>
+                    </ul>
+
+                    <h4>Financial Information:</h4>
+                    <ul>
+                        <li>Bank accounts and balances</li>
+                        <li>Real estate holdings</li>
+                        <li>Investment accounts</li>
+                        <li>Business interests</li>
+                        <li>Insurance policies</li>
+                        <li>Debts and loans</li>
+                        <li>Monthly expenses and obligations</li>
+                    </ul>
+
+                    <h4>Personal Preferences:</h4>
+                    <ul>
+                        <li>Preferred executors (primary and alternate)</li>
+                        <li>Children's guardians (primary and alternate)</li>
+                        <li>Wasiyyah recipients (if any)</li>
+                        <li>Specific burial instructions</li>
+                    </ul>
+                </div>
+
+                <div class="calculation-box">
+                    <h3>Step 2: Calculate Current Inheritance Distribution</h3>
+
+                    <p>Use these formulas for your current family situation:</p>
+
+                    <h4>Example Family: Husband, wife, 2 sons, 1 daughter, both parents alive</h4>
+
+                    <p><strong>If husband dies:</strong></p>
+                    <ul>
+                        <li>Wife: 1/8 (has children)</li>
+                        <li>Each parent: 1/6</li>
+                        <li>Remaining estate: Sons get 2x daughters</li>
+                        <li>If $100,000 estate: Wife $12,500, Each parent $16,667, Each son $18,333, Daughter $9,167</li>
+                    </ul>
+
+                    <p><em>Adjust calculations based on your specific family composition.</em></p>
+                </div>
+
+                <div class="info-box">
+                    <h3>Step 3: Decide on Wasiyyah (Optional)</h3>
+
+                    <p><strong>You may designate up to 1/3 of estate to:</strong></p>
+                    <ul>
+                        <li>Islamic charities (MCK, Islamic schools, relief organizations)</li>
+                        <li>Non-Muslim family members</li>
+                        <li>Adopted children or stepchildren</li>
+                        <li>Friends or community members</li>
+                        <li>Specific Islamic projects</li>
+                    </ul>
+
+                    <div class="warning-box">
+                        <strong>Cannot give Wasiyyah to:</strong> Spouse, children, or parents (they already receive fixed shares)
+                    </div>
+                </div>
+
+                <div class="highlight-box">
+                    <h3>Step 4: Choose Key People</h3>
+
+                    <h4>Executor (Primary and Alternate):</h4>
+                    <ul>
+                        <li>Must be trustworthy and organized</li>
+                        <li>Should understand Islamic inheritance</li>
+                        <li>Preferably lives nearby</li>
+                        <li>Consider age and health</li>
+                        <li>Someone who gets along with family</li>
+                    </ul>
+
+                    <h4>Children's Guardians (Primary and Alternate):</h4>
+                    <ul>
+                        <li>Islamic commitment and lifestyle</li>
+                        <li>Financial stability</li>
+                        <li>Geographic location</li>
+                        <li>Parenting philosophy</li>
+                        <li>Age and health</li>
+                        <li>Relationship with your children</li>
+                    </ul>
+                </div>
+
+                <div class="steps-list">
+                    <h3>Step 5: Draft Your Will</h3>
+
+                    <h4>Option A: Use Online Islamic Will Services</h4>
+                    <ul>
+                        <li><strong>Shariawiz.com</strong> (approximately $200) - recommended by presenter</li>
+                        <li><strong>Mywassiyah.com</strong></li>
+                        <li><strong>Muslim.estate</strong></li>
+                    </ul>
+                    <p><em>Then take draft to Tennessee attorney for review and proper execution</em></p>
+
+                    <h4>Option B: Work Directly with Attorney</h4>
+                    <ul>
+                        <li><strong>Jonathan Reed, Egerton McAfee</strong> - experienced with Islamic wills</li>
+                        <li><strong>John R. Foust</strong> - solo practitioner familiar with Muslim community</li>
+                    </ul>
+
+                    <h4>Option C: MCK Will Clinic (Future)</h4>
+                    <ul>
+                        <li>MCK plans to offer basic will clinic for simple situations</li>
+                        <li>Best for Muslims without complex estates or non-Muslim family</li>
+                    </ul>
+                </div>
+
+                <div class="info-box">
+                    <h3>Steps 6-10: Complete the Process</h3>
+                    <ul>
+                        <li><strong>Step 6:</strong> Include all required elements in your will</li>
+                        <li><strong>Step 7:</strong> Handle spousal elective share waiver if married</li>
+                        <li><strong>Step 8:</strong> Execute documents properly with witnesses/notarization</li>
+                        <li><strong>Step 9:</strong> Store documents safely and distribute copies</li>
+                        <li><strong>Step 10:</strong> Update regularly as circumstances change</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Common Situations and Solutions Tab -->
+            <div id="situations" class="tab-content">
+                <div class="tab-navigation">
+                    <button class="nav-button" onclick="previousTab()">← Previous: Steps</button>
+                    <span class="tab-counter">Section 8 of 11: Common Situations and Solutions</span>
+                    <button class="nav-button" onclick="nextTab()">Next: FAQ →</button>
+                </div>
+
+                <h2>Common Situations and Solutions</h2>
+
+                <div class="example-case">
+                    <h3>Situation 1: Non-Muslim Spouse</h3>
+                    <p><strong>Challenge:</strong> Non-Muslim spouse cannot inherit under Islamic law</p>
+                    <p><strong>Solution:</strong></p>
+                    <ul>
+                        <li>Give lifetime gifts during your lifetime</li>
+                        <li>Include in Wasiyyah (up to 1/3)</li>
+                        <li>Consider if spouse might convert before your death</li>
+                    </ul>
+                </div>
+
+                <div class="example-case">
+                    <h3>Situation 2: Adopted Children</h3>
+                    <p><strong>Challenge:</strong> Not Islamic heirs but you want to provide for them</p>
+                    <p><strong>Solution:</strong></p>
+                    <ul>
+                        <li>Include in wasiyyah (up to 1/3)</li>
+                        <li>Give substantial lifetime gifts</li>
+                        <li>Consider legal trust arrangements</li>
+                        <li>Note: Tennessee courts might not enforce disinheritance of adopted children</li>
+                    </ul>
+                </div>
+
+                <div class="example-case">
+                    <h3>Situation 3: Large Estate (Over $1 Million)</h3>
+                    <p><strong>Challenge:</strong> Complex tax implications and family dynamics</p>
+                    <p><strong>Solution:</strong></p>
+                    <ul>
+                        <li><strong>Must work with attorney</strong> experienced in estate tax planning</li>
+                        <li>Consider trust arrangements to minimize taxes</li>
+                        <li>Plan for liquidity to pay taxes</li>
+                        <li>May need life insurance for tax payment</li>
+                    </ul>
+                </div>
+
+                <div class="example-case">
+                    <h3>Situation 4: Child with Special Needs</h3>
+                    <p><strong>Challenge:</strong> Disabled child may need more support</p>
+                    <p><strong>Solution:</strong></p>
+                    <ul>
+                        <li>Cannot change Islamic inheritance shares</li>
+                        <li>Use wasiyyah for additional support</li>
+                        <li>Create special needs trust through wasiyyah</li>
+                        <li>Give additional lifetime gifts</li>
+                    </ul>
+                </div>
+
+                <div class="example-case">
+                    <h3>Situation 5: Family Business</h3>
+                    <p><strong>Challenge:</strong> Business ownership among multiple heirs</p>
+                    <p><strong>Solution:</strong></p>
+                    <ul>
+                        <li>Professional business valuation needed</li>
+                        <li>May need to sell business to divide proceeds</li>
+                        <li>Consider buy-sell agreements with life insurance</li>
+                        <li>Work with attorney for business succession planning</li>
+                    </ul>
+                </div>
+
+                <div class="example-case">
+                    <h3>Situation 6: Distant or Estranged Children</h3>
+                    <p><strong>Challenge:</strong> Adult children you haven't spoken to in years</p>
+                    <p><strong>Islamic Rule:</strong> Cannot disinherit Islamic heirs regardless of relationship</p>
+                    <p><strong>Additional Steps:</strong></p>
+                    <ul>
+                        <li>Make effort to reconcile before death</li>
+                        <li>Use wasiyyah for others who helped you</li>
+                        <li>Consider mediation for family healing</li>
+                    </ul>
+                </div>
+
+                <div class="example-case">
+                    <h3>Situation 7: Convert to Islam with Non-Muslim Family</h3>
+                    <p><strong>Challenge:</strong> Non-Muslim parents and siblings cannot inherit</p>
+                    <p><strong>Solution:</strong></p>
+                    <ul>
+                        <li>Give lifetime gifts to non-Muslim family</li>
+                        <li>Use Wasiyyah (up to 1/3) for non-Muslim relatives</li>
+                        <li>Islamic heirs (Muslim spouse/children) get remaining 2/3</li>
+                    </ul>
+                </div>
+
+                <div class="example-case">
+                    <h3>Situation 8: No Muslim Family Members</h3>
+                    <p><strong>Challenge:</strong> Burial and Islamic practices might not be followed</p>
+                    <p><strong>Solution:</strong></p>
+                    <ul>
+                        <li><strong>Critical to have written Islamic will</strong></li>
+                        <li>Specify MCK contact in will</li>
+                        <li>Carry MCK emergency card in wallet</li>
+                        <li>Name Muslim executor if possible</li>
+                        <li>Give detailed Islamic burial instructions</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- FAQ Tab -->
+            <div id="faq" class="tab-content">
+                <div class="tab-navigation">
+                    <button class="nav-button" onclick="previousTab()">← Previous: Situations</button>
+                    <span class="tab-counter">Section 9 of 11: Frequently Asked Questions</span>
+                    <button class="nav-button" onclick="nextTab()">Next: Resources →</button>
+                </div>
+
+                <h2>Frequently Asked Questions</h2>
+
+                <div class="faq-section">
+                    <h3>Estate Size and Planning</h3>
+
+                    <h4>Q: If you have a large estate, can you put a range on what constitutes a "large estate"?</h4>
+                    <div class="info-box">
+                        <p><strong>A:</strong> Generally, we're talking about a million dollars or more. Large estates often include expensive assets like houses, and you'll face significant tax obligations. Proper planning can save you substantial money in taxes.</p>
+                    </div>
+
+                    <h4>Q: What does Islamic law say about non-liquid assets like vehicles, property, and other assets that aren't cash?</h4>
+                    <div class="highlight-box">
+                        <p><strong>A:</strong> Everything must be shared according to Islamic teachings. All assets may need to be liquidated and distributed according to Sharia law. Islamic law makes no distinction between real property and monetary assets - whatever remains after debts and expenses must be distributed according to Islamic inheritance principles.</p>
+                    </div>
+                </div>
+
+                <div class="faq-section">
+                    <h3>Family Dynamics and Challenges</h3>
+
+                    <h4>Q: What is the likelihood of family members challenging a will?</h4>
+                    <div class="warning-box">
+                        <p><strong>A:</strong> It depends on your specific family dynamics. Challenges typically arise when someone believes "I'm not getting what I'm entitled to" or suspects undue influence, such as "this benefits one person unfairly." In such cases, they may contest the will.</p>
+                    </div>
+
+                    <h4>Q: What if someone in a Muslim family has a will that doesn't comply with Sharia law? Can the family force them not to follow the will?</h4>
+                    <div class="info-box">
+                        <p><strong>A:</strong> You have a legal obligation to follow the will according to this country's laws. From an Islamic perspective, we respect the Wassiyah (bequest) and execute whatever is specified there. However, when it comes to inheritance distribution, we must follow Islamic teachings. In court, the legal will takes precedence.</p>
+                    </div>
+
+                    <h4>Q: What if you are a single parent due to widowhood?</h4>
+                    <div class="highlight-box">
+                        <p><strong>A:</strong> You need to designate both primary and secondary guardians. Consider factors such as lifestyle compatibility, religiosity, location, and the person's ability to be fiscally responsible for both the wealth (maal) and the orphaned children (yateen).</p>
+                    </div>
+                </div>
+
+                <div class="faq-section">
+                    <h3>Special Family Situations</h3>
+
+                    <h4>Q: What about adopted children in Islamic inheritance?</h4>
+                    <div class="warning-box">
+                        <p><strong>A:</strong> Under Islamic inheritance law, adopted children are not considered fixed heirs - they can only benefit from inheritance through Wassiyah (bequest). The same applies to children born outside of wedlock. While courts treat adopted children the same as biological children, Islamic Wills may make distinctions that could affect enforcement.</p>
+                    </div>
+
+                    <h4>Q: Can Non-Muslim family members be heirs?</h4>
+                    <div class="info-box">
+                        <p><strong>A:</strong> There is a hadith: <em>"A Muslim cannot be the heir of a disbeliever, nor can a disbeliever be the heir of a Muslim."</em> Non-Muslims are excluded from Islamic inheritance but may receive lifetime gifts or bequests from the Wasiyyah (1/3 discretionary portion).</p>
+                    </div>
+
+                    <h4>Q: What about receiving from non-Muslims?</h4>
+                    <div class="highlight-box">
+                        <p><strong>A:</strong> There is no problem with being a beneficiary of a non-Muslim relative who wishes to name you in their estate plan at their discretion.</p>
+                    </div>
+                </div>
+
+                <div class="faq-section">
+                    <h3>Islamic Law Principles</h3>
+
+                    <h4>Q: Why do sons get double what daughters get?</h4>
+                    <div class="info-box">
+                        <p><strong>A:</strong> This rule represents a connection between rights and responsibilities in Islam. It complements the Sharia law requirement that males are required to spend on the entire family unit, whereas females have no such restriction. Men have more financial duties than women do.</p>
+                    </div>
+
+                    <h4>Q: Why do parents get a share of the inheritance?</h4>
+                    <div class="verse-translation">
+                        <p><strong>A:</strong> The Qur'an addresses this directly: <em>"As for your parents and your children -- you know not which of them is more deserving of benefit from you." (4:11)</em> Inheritance is the right of the heir that Allah has ordained, not our right to decide who gets what after we die.</p>
+                    </div>
+
+                    <h4>Q: Can a person disinherit beneficiaries?</h4>
+                    <div class="warning-box">
+                        <p><strong>A:</strong> Disinheriting a person means taking away their Islamic right of inheritance. Example: Michael is a Muslim who has three adult children. He has not spoken to them in 10 years after a rough divorce with their mother. He wants to disinherit his children. Instead, he wants to give everything to the Masjid. Michael cannot do this in Islam. Even though giving money to the Masjid, by itself, is beneficial, he cannot do this for more than 1/3 of his estate. The rest must go to his rightful heirs in Islam. Failure to do this would make him unjust. Also, he and his children should make efforts to communicate. Muslims should also never cut off family ties. So, the answer is No.</p>
+                    </div>
+                </div>
+
+                <div class="faq-section">
+                    <h3>Legal and Practical Issues</h3>
+
+                    <h4>Q: Who should know about the original will?</h4>
+                    <div class="steps-list">
+                        <p><strong>A:</strong> Make copies and store the original in a safe deposit box. Distribute copies to key people and inform them where the original is located. Ensure trusted individuals know how to access your important documents.</p>
+                    </div>
+
+                    <h4>Q: Are trusts permissible in Islam?</h4>
+                    <div class="highlight-box">
+                        <p><strong>A:</strong> Yes, you can create trusts and put regulations on when people can access money, such as creating provisions for minor children to receive inheritance at a certain age.</p>
+                    </div>
+
+                    <h4>Q: How do I ensure I have an Islamic death?</h4>
+                    <div class="info-box">
+                        <p><strong>A:</strong> You can obtain guidance cards from the Muslim Community of Knoxville (MCK) that provide instructions for Islamic end-of-life practices. (I would include here a picture of the card. The card has to be updated, by adding the following statement or similar to it: For my estate/assets distribution after my passing, check my Islamic Will & Wasiyyah by contacting (name of organization or your trusted family member) at (include phone, email, address). We can have a double -side card: one side for funeral and burial, and the other about the assets).</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Resources Tab -->
+            <div id="resources" class="tab-content">
+                <div class="tab-navigation">
+                    <button class="nav-button" onclick="previousTab()">← Previous: FAQ</button>
+                    <span class="tab-counter">Section 10 of 11: Resources and Contacts</span>
+                    <button class="nav-button" onclick="nextTab()">Next: Action Plan →</button>
+                </div>
+
+                <h2>Resources and Contacts</h2>
+
+                <h3>Islamic Inheritance Resources</h3>
+
+                <div class="contact-card">
+                    <h4>🕌 Muslim Community of Knoxville (MCK)</h4>
+                    <p><strong>Contact:</strong> [Insert current contact information]</p>
+                    <p><strong>Services:</strong> Islamic guidance, inheritance calculation assistance, emergency cards</p>
+                    <p><strong>Website:</strong> [Insert current website]</p>
+                    <p><strong>Islamic Inheritance Distribution Chart:</strong> <a href="https://muslimknoxville.org/inheritancechart25" target="_blank">muslimknoxville.org/inheritancechart25</a></p>
+                </div>
+
+                <div class="contact-card">
+                    <h4>💻 Online Islamic Will Services</h4>
+                    <ul>
+                        <li><strong>Shariawiz.com</strong> - ~$200, attorney-created (recommended by presenter)</li>
+                        <li><strong>Mywassiyah.com</strong> - Research current pricing and reviews</li>
+                        <li><strong>Muslim.estate</strong> - Research current pricing and reviews</li>
+                    </ul>
+                    <div class="warning-box">
+                        <strong>Always have attorney review documents from online services</strong>
+                    </div>
+                </div>
+
+                <h3>Legal Resources</h3>
+
+                <div class="contact-card">
+                    <h4>⚖️ Attorneys with Islamic Estate Planning Experience</h4>
+
+                    <h5>Jonathan Reed</h5>
+                    <p>Egerton McAfee Law Firm<br>
+                    Downtown Knoxville<br>
+                    <em>Ask for Katrina (his assistant) - very helpful<br>
+                    Extensive experience with Muslim clients and Islamic wills</em></p>
+
+                    <h5>John R. Foust</h5>
+                    <p>Solo Practitioner<br>
+                    <em>Younger attorney who has reached out to learn about Muslim community needs</em></p>
+                </div>
+
+                <div class="info-box">
+                    <h4>When to Use Attorney:</h4>
+                    <ul>
+                        <li>Large estates (over $1 million)</li>
+                        <li>Complex family situations</li>
+                        <li>Business ownership</li>
+                        <li>Desire to minimize taxes</li>
+                        <li>Property in multiple states</li>
+                        <li>Special needs family members</li>
+                    </ul>
+                </div>
+
+                <h3>Tennessee State Resources</h3>
+
+                <div class="contact-card">
+                    <h4>📋 Advanced Healthcare Directive Forms</h4>
+                    <ul>
+                        <li>Available from Tennessee state website</li>
+                        <li>Can be obtained from MCK</li>
+                        <li>Hospital social workers can provide</li>
+                    </ul>
+                </div>
+
+                <div class="contact-card">
+                    <h4>📝 Notary Services</h4>
+                    <ul>
+                        <li>Banks (often free for customers)</li>
+                        <li>UPS Stores</li>
+                        <li>Law offices</li>
+                        <li>Some libraries</li>
+                    </ul>
+                </div>
+
+                <div class="contact-card">
+                    <h4>🏦 Safe Deposit Boxes</h4>
+                    <ul>
+                        <li>Most banks offer for annual fee</li>
+                        <li>Ensure spouse/executor has access</li>
+                        <li>Keep inventory of box contents</li>
+                    </ul>
+                </div>
+
+                <h3>Islamic Scholarship Resources</h3>
+
+                <div class="highlight-box">
+                    <h4>For Inheritance Questions:</h4>
+                    <ul>
+                        <li>MCK Islamic scholars</li>
+                        <li>Local mosque leadership</li>
+                        <li>Online Islamic inheritance calculators (double-check results)</li>
+                    </ul>
+                </div>
+
+                <div class="info-box">
+                    <h4>For Complex Islamic Law Questions:</h4>
+                    <ul>
+                        <li>Islamic Society of North America (ISNA)</li>
+                        <li>Fiqh Council of North America</li>
+                        <li>Assembly of Muslim Jurists of America (AMJA)</li>
+                    </ul>
+                </div>
+
+                <h3>Emergency Resources</h3>
+
+                <div class="warning-box urgent">
+                    <h4>🚨 MCK Emergency Card Information</h4>
+                    <ul>
+                        <li>Carry in wallet for identification</li>
+                        <li>Includes MCK contact information</li>
+                        <li>Helps ensure Islamic burial in emergency</li>
+                        <li>Can be modified to include executor contact information</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Your Action Plan Tab -->
+            <div id="action" class="tab-content">
+                <div class="tab-navigation">
+                    <button class="nav-button" onclick="previousTab()">← Previous: Resources</button>
+                    <span class="tab-counter">Section 11 of 11: Your Action Plan</span>
+                    <button class="nav-button" onclick="nextTab()" disabled>Complete! ✓</button>
+                </div>
+
+                <h2>Your Action Plan</h2>
+
+                <h3>Immediate Steps (This Week)</h3>
+
+                <div class="checklist">
+                    <h4>Day 1-2: Assessment</h4>
+                    <label><input type="checkbox"> Complete family and asset inventory (use worksheet below)</label>
+                    <label><input type="checkbox"> Determine current inheritance distribution using formulas</label>
+                    <label><input type="checkbox"> Decide if you want wasiyyah and for whom</label>
+                </div>
+
+                <div class="checklist">
+                    <h4>Day 3-4: Key Decisions</h4>
+                    <label><input type="checkbox"> Choose primary and alternate executors</label>
+                    <label><input type="checkbox"> Choose guardians for minor children (primary and alternate)</label>
+                    <label><input type="checkbox"> Decide between online service vs. attorney</label>
+                </div>
+
+                <div class="checklist">
+                    <h4>Day 5-7: Begin Process</h4>
+                    <label><input type="checkbox"> If using online service: Start with Shariawiz.com, Mywassiyah.com, or Muslim.estate</label>
+                    <label><input type="checkbox"> If using attorney: Contact Jonathan Reed (Egerton McAfee) or John R. Foust</label>
+                    <label><input type="checkbox"> Gather Tennessee healthcare directive forms</label>
+                </div>
+
+                <h3>Short-term Steps (This Month)</h3>
+
+                <div class="checklist">
+                    <h4>Week 2:</h4>
+                    <label><input type="checkbox"> Complete will drafting (online service or attorney consultation)</label>
+                    <label><input type="checkbox"> Draft power of attorney document</label>
+                    <label><input type="checkbox"> Complete healthcare directive</label>
+                </div>
+
+                <div class="checklist">
+                    <h4>Week 3:</h4>
+                    <label><input type="checkbox"> Review all documents carefully</label>
+                    <label><input type="checkbox"> If used online service, schedule attorney review</label>
+                    <label><input type="checkbox"> Prepare spousal elective share waiver document</label>
+                </div>
+
+                <div class="checklist">
+                    <h4>Week 4:</h4>
+                    <label><input type="checkbox"> Execute all documents with proper witnesses/notarization</label>
+                    <label><input type="checkbox"> Store originals safely</label>
+                    <label><input type="checkbox"> Distribute copies to key people</label>
+                </div>
+
+                <h3>Ongoing Maintenance</h3>
+
+                <div class="checklist">
+                    <h4>Every Year:</h4>
+                    <label><input type="checkbox"> Review documents for needed changes</label>
+                    <label><input type="checkbox"> Update asset information</label>
+                    <label><input type="checkbox"> Confirm executors and guardians still willing to serve</label>
+                </div>
+
+                <div class="checklist">
+                    <h4>Major Life Changes:</h4>
+                    <label><input type="checkbox"> Birth/death of family members</label>
+                    <label><input type="checkbox"> Marriage/divorce</label>
+                    <label><input type="checkbox"> Significant change in assets</label>
+                    <label><input type="checkbox"> Move to different state</label>
+                </div>
+
+                <h3>Family Preparation Steps</h3>
+
+                <div class="checklist">
+                    <h4>Have Conversations About:</h4>
+                    <label><input type="checkbox"> Your healthcare wishes and end-of-life preferences</label>
+                    <label><input type="checkbox"> Children's guardian preferences and your reasoning</label>
+                    <label><input type="checkbox"> Location of important documents and passwords</label>
+                    <label><input type="checkbox"> Your burial and funeral preferences</label>
+                    <label><input type="checkbox"> Family members' understanding of Islamic inheritance</label>
+                </div>
+
+                <div class="checklist">
+                    <h4>Prepare Family:</h4>
+                    <label><input type="checkbox"> Explain Islamic inheritance principles to adult children</label>
+                    <label><input type="checkbox"> Share document locations with executors</label>
+                    <label><input type="checkbox"> Ensure Muslim family members understand their responsibilities</label>
+                    <label><input type="checkbox"> Connect family with MCK for support during difficult times</label>
+                </div>
+
+                <div class="warning-box urgent">
+                    <h3>🕐 Remember: Time is Critical</h3>
+                    <p>The Prophet ﷺ said: <em>"It is the duty of a Muslim who has anything to bequest not to let two nights pass without writing a will about it."</em></p>
+
+                    <p><strong>Start today!</strong> Even if you don't complete everything immediately, taking the first steps is essential. Death comes when least expected, and your family's Islamic burial, inheritance rights, and children's guardianship depend on having these documents in place.</p>
+                </div>
+
+                <h3>Action Worksheets</h3>
+
+                <div class="worksheet">
+                    <h4>Family and Asset Inventory Worksheet</h4>
+
+                    <div class="worksheet-section">
+                        <h4>Personal Information:</h4>
+
+                        <p><strong>Full Legal Name:</strong> <span class="worksheet-line"></span></p>
+
+                        <p><strong>Date of Birth:</strong> <span class="worksheet-line"></span> <strong>Social Security Number:</strong> <span class="worksheet-line"></span></p>
+
+                        <p><strong>Address:</strong> <span class="worksheet-line"></span></p>
+                    </div>
+
+                    <div class="worksheet-section">
+                        <h4>Spouse Information:</h4>
+
+                        <p><strong>Full Legal Name:</strong> <span class="worksheet-line"></span></p>
+
+                        <p><strong>Date of Birth:</strong> <span class="worksheet-line"></span> <strong>Muslim:</strong> Yes / No</p>
+                    </div>
+
+                    <div class="worksheet-section">
+                        <h4>Children Information:</h4>
+
+                        <table class="worksheet-table">
+                            <tr>
+                                <th>Name</th>
+                                <th>Date of Birth</th>
+                                <th>Muslim (Y/N)</th>
+                                <th>Adopted (Y/N)</th>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div class="worksheet-section">
+                        <h4>Parents Information:</h4>
+
+                        <p><strong>Mother:</strong> <span class="worksheet-line"></span> (Living: Y/N, Muslim: Y/N)</p>
+
+                        <p><strong>Father:</strong> <span class="worksheet-line"></span> (Living: Y/N, Muslim: Y/N)</p>
+                    </div>
+
+                    <div class="worksheet-section">
+                        <h4>Assets:</h4>
+
+                        <table class="worksheet-table">
+                            <tr>
+                                <th>Type</th>
+                                <th>Description</th>
+                                <th>Value</th>
+                                <th>Account/Location</th>
+                            </tr>
+                            <tr>
+                                <td>Bank Account</td>
+                                <td>&nbsp;</td>
+                                <td>$</td>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td>Retirement Account</td>
+                                <td>&nbsp;</td>
+                                <td>$</td>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td>Investment Account</td>
+                                <td>&nbsp;</td>
+                                <td>$</td>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td>Real Estate</td>
+                                <td>&nbsp;</td>
+                                <td>$</td>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td>Vehicle</td>
+                                <td>&nbsp;</td>
+                                <td>$</td>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td>Business Interest</td>
+                                <td>&nbsp;</td>
+                                <td>$</td>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td>Life Insurance</td>
+                                <td>&nbsp;</td>
+                                <td>$</td>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td>Other</td>
+                                <td>&nbsp;</td>
+                                <td>$</td>
+                                <td>&nbsp;</td>
+                            </tr>
+                        </table>
+
+                        <p><strong>Total Estimated Assets:</strong> $<span class="worksheet-line"></span></p>
+                    </div>
+
+                    <div class="worksheet-section">
+                        <h4>Debts:</h4>
+
+                        <table class="worksheet-table">
+                            <tr>
+                                <th>Type</th>
+                                <th>Amount</th>
+                                <th>Monthly Payment</th>
+                            </tr>
+                            <tr>
+                                <td>Mortgage</td>
+                                <td>$</td>
+                                <td>$</td>
+                            </tr>
+                            <tr>
+                                <td>Car Loan</td>
+                                <td>$</td>
+                                <td>$</td>
+                            </tr>
+                            <tr>
+                                <td>Credit Card</td>
+                                <td>$</td>
+                                <td>$</td>
+                            </tr>
+                            <tr>
+                                <td>Other</td>
+                                <td>$</td>
+                                <td>$</td>
+                            </tr>
+                        </table>
+
+                        <p><strong>Total Estimated Debts:</strong> $<span class="worksheet-line"></span></p>
+
+                        <p><strong>Net Estate (Assets minus Debts):</strong> $<span class="worksheet-line"></span></p>
+                    </div>
+
+                    <div class="worksheet-section">
+                        <h4>Executor and Guardian Selection Worksheet</h4>
+
+                        <p><strong>Preferred Executor:</strong></p>
+                        <p>Primary Choice: <span class="worksheet-line"></span></p>
+                        <p>Why: <span class="worksheet-line"></span></p>
+                        <p>Alternate Choice: <span class="worksheet-line"></span></p>
+                        <p>Why: <span class="worksheet-line"></span></p>
+
+                        <p><strong>Children's Guardian (if applicable):</strong></p>
+                        <p>Primary Choice: <span class="worksheet-line"></span></p>
+                        <p>Why (consider: Islamic commitment, financial stability, location, age, relationship with children): <span class="worksheet-line"></span></p>
+                        <p>Alternate Choice: <span class="worksheet-line"></span></p>
+                        <p>Why: <span class="worksheet-line"></span></p>
+
+                        <p><strong>Wasiyyah Preferences (up to 1/3 of estate):</strong></p>
+                        <p>Recipient 1: <span class="worksheet-line"></span> Amount/Percentage: <span class="worksheet-line"></span></p>
+                        <p>Recipient 2: <span class="worksheet-line"></span> Amount/Percentage: <span class="worksheet-line"></span></p>
+                        <p>Recipient 3: <span class="worksheet-line"></span> Amount/Percentage: <span class="worksheet-line"></span></p>
+                    </div>
+
+                    <div class="worksheet-section">
+                        <h4>Document Checklist</h4>
+
+                        <p><strong>Essential Documents to Create:</strong></p>
+                        <p>☐ Islamic Will</p>
+                        <p>☐ General Durable Power of Attorney</p>
+                        <p>☐ Advanced Healthcare Directive</p>
+                        <p>☐ Spousal Elective Share Waiver (if married)</p>
+
+                        <p><strong>Document Storage:</strong></p>
+                        <p>☐ Original documents stored safely</p>
+                        <p>☐ Copies given to executor</p>
+                        <p>☐ Copies given to alternate executor</p>
+                        <p>☐ Spouse has copies</p>
+                        <p>☐ Adult children informed of location</p>
+
+                        <p><strong>Annual Review Checklist:</strong></p>
+                        <p>☐ Family changes (births, deaths, marriages, divorces)</p>
+                        <p>☐ Asset changes (major purchases, sales, new accounts)</p>
+                        <p>☐ Executor/guardian availability and willingness</p>
+                        <p>☐ Contact information updates</p>
+                        <p>☐ Islamic inheritance calculation updates</p>
+                    </div>
+                </div>
+
+                <div class="info-box">
+                    <p><em>This comprehensive guide serves as your complete reference for Islamic estate planning in Tennessee. Keep it accessible and refer to it as you complete each step of the process. May Allah make this process easy for you and accept your efforts to follow His guidance.</em></p>
+
+                    <p><strong>Muslim Community of Knoxville</strong><br>
+                    <em>Serving our community with Islamic guidance and practical support</em></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const tabs = ['overview', 'foundations', 'inheritance', 'distribution', 'tennessee', 'documents', 'stepbystep', 'situations', 'faq', 'resources', 'action'];
+        const tabNames = ['Why You Need an Islamic Will', 'Islamic Foundations', 'Understanding Islamic Inheritance Rules', 'Islamic Steps of Distribution', 'Tennessee Legal Requirements', 'Your Three Essential Documents', 'Creating Your Islamic Will - Step by Step', 'Common Situations and Solutions', 'Frequently Asked Questions', 'Resources and Contacts', 'Your Action Plan'];
+        let currentTabIndex = 0;
+
+        function showTab(tabName, index) {
+            // Hide all tab contents
+            const tabContents = document.getElementsByClassName('tab-content');
+            for (let i = 0; i < tabContents.length; i++) {
+                tabContents[i].classList.remove('active');
+            }
+
+            // Remove active class from all nav tabs
+            const navTabs = document.getElementsByClassName('nav-tab');
+            for (let i = 0; i < navTabs.length; i++) {
+                navTabs[i].classList.remove('active');
+            }
+
+            // Show selected tab content and activate nav tab
+            document.getElementById(tabName).classList.add('active');
+            if (event && event.target) {
+                event.target.classList.add('active');
+            } else {
+                // Find and activate the correct nav tab
+                for (let i = 0; i < navTabs.length; i++) {
+                    if (navTabs[i].onclick.toString().includes(tabName)) {
+                        navTabs[i].classList.add('active');
+                        break;
+                    }
+                }
+            }
+
+            // Update current tab index and progress
+            currentTabIndex = index !== undefined ? index : tabs.indexOf(tabName);
+            updateProgress();
+            updateNavigationButtons();
+
+            // Scroll to top of content
+            document.querySelector('.content').scrollTop = 0;
+        }
+
+        function nextTab() {
+            if (currentTabIndex < tabs.length - 1) {
+                currentTabIndex++;
+                showTab(tabs[currentTabIndex], currentTabIndex);
+                updateActiveNavTab();
+            }
+        }
+
+        function previousTab() {
+            if (currentTabIndex > 0) {
+                currentTabIndex--;
+                showTab(tabs[currentTabIndex], currentTabIndex);
+                updateActiveNavTab();
+            }
+        }
+
+        function updateActiveNavTab() {
+            const navTabs = document.getElementsByClassName('nav-tab');
+            for (let i = 0; i < navTabs.length; i++) {
+                navTabs[i].classList.remove('active');
+            }
+            if (navTabs[currentTabIndex]) {
+                navTabs[currentTabIndex].classList.add('active');
+            }
+        }
+
+        function updateProgress() {
+            const progressFill = document.getElementById('progressFill');
+            const percentage = ((currentTabIndex + 1) / tabs.length) * 100;
+            progressFill.style.width = percentage + '%';
+        }
+
+        function updateNavigationButtons() {
+            // Update all tab navigation sections
+            const tabNavigations = document.getElementsByClassName('tab-navigation');
+
+            for (let i = 0; i < tabNavigations.length; i++) {
+                const prevBtn = tabNavigations[i].querySelector('button:first-child');
+                const counter = tabNavigations[i].querySelector('.tab-counter');
+                const nextBtn = tabNavigations[i].querySelector('button:last-child');
+
+                // Update previous button
+                prevBtn.disabled = currentTabIndex === 0;
+                if (currentTabIndex > 0) {
+                    prevBtn.textContent = `← Previous: ${getShortTabName(currentTabIndex - 1)}`;
+                }
+
+                // Update counter
+                counter.textContent = `Section ${currentTabIndex + 1} of ${tabs.length}: ${tabNames[currentTabIndex]}`;
+
+                // Update next button
+                if (currentTabIndex < tabs.length - 1) {
+                    nextBtn.disabled = false;
+                    nextBtn.textContent = `Next: ${getShortTabName(currentTabIndex + 1)} →`;
+                } else {
+                    nextBtn.disabled = true;
+                    nextBtn.textContent = 'Complete! ✓';
+                }
+            }
+        }
+
+        function getShortTabName(index) {
+            const shortNames = ['Overview', 'Foundations', 'Rules', 'Distribution', 'TN Law', 'Documents', 'Steps', 'Situations', 'FAQ', 'Resources', 'Action Plan'];
+            return shortNames[index] || tabNames[index];
+        }
+
+        // Initialize on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            updateProgress();
+            updateNavigationButtons();
+        });
+
+        // Handle checkbox state changes for user convenience
+        document.addEventListener('change', function(e) {
+            if (e.target.type === 'checkbox') {
+                // Visual feedback for completed items
+                const label = e.target.closest('label');
+                if (e.target.checked) {
+                    label.style.opacity = '0.7';
+                    label.style.textDecoration = 'line-through';
+                } else {
+                    label.style.opacity = '1';
+                    label.style.textDecoration = 'none';
+                }
+            }
+        });
+    </script>
+</body>
+</html>
