@@ -510,6 +510,24 @@
             to { opacity: 1; transform: translateY(0); }
         }
 
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+            margin: 1.8rem 0;
+            border: 1px solid #e0e0e0;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
         /* Desktop and large tablet optimizations */
         @media (min-width: 769px) {
             .nav-tabs {
@@ -794,6 +812,15 @@
                 </div>
 
                 <h2>Why You Need an Islamic Will</h2>
+
+                <div class="video-container">
+                    <iframe
+                        src="https://www.youtube.com/embed/Vzf3zxc9nAE"
+                        title="Islamic Will and Estate Planning Reference"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                    </iframe>
+                </div>
 
                 <h3>Without an Islamic Will in Tennessee:</h3>
                 <div class="warning-box urgent">
