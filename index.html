@@ -528,6 +528,54 @@
             border: 0;
         }
 
+        .comparison-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin: 1.8rem 0;
+        }
+
+        .comparison-box {
+            padding: 1.5rem;
+            height: 100%;
+        }
+
+        .comparison-box h3 {
+            margin-top: 0;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid;
+        }
+
+        .comparison-box.without {
+            background: white;
+            border: 2px solid #7a0f12;
+        }
+
+        .comparison-box.without h3 {
+            color: #7a0f12;
+            border-color: #7a0f12;
+        }
+
+        .comparison-box.with {
+            background: #7a0f12;
+            color: white;
+        }
+
+        .comparison-box.with h3 {
+            color: white;
+            border-color: white;
+        }
+
+        .comparison-box ul {
+            margin: 0;
+            padding-left: 1.5rem;
+        }
+
+        .comparison-box li {
+            margin: 0.8rem 0;
+        }
+
         /* Desktop and large tablet optimizations */
         @media (min-width: 769px) {
             .nav-tabs {
@@ -556,6 +604,11 @@
         @media (max-width: 768px) {
             .container {
                 margin: 0.5rem;
+            }
+
+            .comparison-container {
+                grid-template-columns: 1fr;
+                gap: 1rem;
             }
 
             .header {
@@ -822,26 +875,28 @@
                     </iframe>
                 </div>
 
-                <h3>Without an Islamic Will in Tennessee:</h3>
-                <div class="warning-box urgent">
-                    <ul>
-                        <li><strong>State law decides everything</strong> - Tennessee Intestate Succession Laws will distribute your wealth</li>
-                        <li><strong>Conflicts with Islam</strong> - Spouses get 1/3 minimum, parents may get nothing, no 2:1 son/daughter ratio</li>
-                        <li><strong>No "Wasiyyah"</strong> - Cannot designate 1/3 for charity or non-heirs</li>
-                        <li><strong>Wrong burial</strong> - Non-Muslim family may cremate or use non-Islamic burial</li>
-                        <li><strong>Wrong guardians</strong> - State may choose guardians you wouldn't want for your children</li>
-                    </ul>
-                </div>
+                <div class="comparison-container">
+                    <div class="comparison-box without">
+                        <h3>❌ Without an Islamic Will</h3>
+                        <ul>
+                            <li><strong>State law decides everything</strong> - Tennessee Intestate Succession Laws will distribute your wealth</li>
+                            <li><strong>Conflicts with Islam</strong> - Spouses get 1/3 minimum, parents may get nothing, no 2:1 son/daughter ratio</li>
+                            <li><strong>No "Wasiyyah"</strong> - Cannot designate 1/3 for charity or non-heirs</li>
+                            <li><strong>Wrong burial</strong> - Non-Muslim family may cremate or use non-Islamic burial</li>
+                            <li><strong>Wrong guardians</strong> - State may choose guardians you wouldn't want for your children</li>
+                        </ul>
+                    </div>
 
-                <h3>With an Islamic Will:</h3>
-                <div class="highlight-box">
-                    <ul>
-                        <li><strong>Follow Qur'anic commands</strong> for wealth distribution</li>
-                        <li><strong>Ensure Islamic burial</strong> and funeral rites</li>
-                        <li><strong>Choose your executors</strong> and children's guardians</li>
-                        <li><strong>Make Wasiyyah</strong> for charity or non-heir family members</li>
-                        <li><strong>Avoid family conflicts</strong> with clear divine guidance</li>
-                    </ul>
+                    <div class="comparison-box with">
+                        <h3>✓ With an Islamic Will</h3>
+                        <ul>
+                            <li><strong>Follow Qur'anic commands</strong> for wealth distribution</li>
+                            <li><strong>Ensure Islamic burial</strong> and funeral rites</li>
+                            <li><strong>Choose your executors</strong> and children's guardians</li>
+                            <li><strong>Make Wasiyyah</strong> for charity or non-heir family members</li>
+                            <li><strong>Avoid family conflicts</strong> with clear divine guidance</li>
+                        </ul>
+                    </div>
                 </div>
 
                 <div class="warning-box">
